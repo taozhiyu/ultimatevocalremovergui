@@ -41,23 +41,23 @@ DEMUCS_VERSION_MAPPER = {
             DEMUCS_V4:DEMUCS_V4_TAG}
 
 #Download Center
-DOWNLOAD_FAILED = 'Download Failed'
-DOWNLOAD_STOPPED = 'Download Stopped'
-DOWNLOAD_COMPLETE = 'Download Complete'
-DOWNLOAD_UPDATE_COMPLETE = 'Update Download Complete'
-SETTINGS_MENU_EXIT = 'exit'
-NO_CONNECTION = 'No Internet Connection'
-VIP_SELECTION = 'VIP:'
-DEVELOPER_SELECTION = 'VIP:'
-NO_NEW_MODELS = 'All Available Models Downloaded'
+# DOWNLOAD_FAILED = 'Download Failed'
+# DOWNLOAD_STOPPED = 'Download Stopped'
+# DOWNLOAD_COMPLETE = 'Download Complete'
+# DOWNLOAD_UPDATE_COMPLETE = 'Update Download Complete'
+# SETTINGS_MENU_EXIT = 'exit'
+# NO_CONNECTION = 'No Internet Connection'
+# VIP_SELECTION = 'VIP:'
+# DEVELOPER_SELECTION = 'VIP:'
+# NO_NEW_MODELS = 'All Available Models Downloaded'
 ENSEMBLE_PARTITION = ': '
 NO_MODEL = 'No Model Selected'
 CHOOSE_MODEL = 'Choose Model'
-SINGLE_DOWNLOAD = 'Downloading Item 1/1...'
-DOWNLOADING_ITEM = 'Downloading Item'
-FILE_EXISTS = 'File already exists!'
-DOWNLOADING_UPDATE = 'Downloading Update...'
-DOWNLOAD_MORE = 'Download More Models'
+# SINGLE_DOWNLOAD = 'Downloading Item 1/1...'
+# DOWNLOADING_ITEM = 'Downloading Item'
+# FILE_EXISTS = 'File already exists!'
+# DOWNLOADING_UPDATE = 'Downloading Update...'
+# DOWNLOAD_MORE = 'Download More Models'
 
 #Menu Options
 
@@ -86,7 +86,7 @@ UPDATE_REPO = "https://github.com/TRvlvr/model_repo/releases/download/uvr_update
 ISSUE_LINK = 'https://github.com/Anjok07/ultimatevocalremovergui/issues/new'
 VIP_REPO = b'\xf3\xc2W\x19\x1foI)\xc2\xa9\xcc\xb67(Z\xf5',\
            b'gAAAAABjQAIQ-NpNMMxMedpKHHb7ze_nqB05hw0YhbOy3pFzuzDrfqumn8_qvraxEoUpZC5ZXC0gGvfDxFMqyq9VWbYKlA67SUFI_wZB6QoVyGI581vs7kaGfUqlXHIdDS6tQ_U-BfjbEAK9EU_74-R2zXjz8Xzekw=='
-NO_CODE = 'incorrect_code'
+# NO_CODE = 'incorrect_code'
 
 #Extensions
 
@@ -99,18 +99,18 @@ JSON = '.json'
 
 #GUI Buttons
 
-START_PROCESSING = 'Start Processing'
-WAIT_PROCESSING = 'Please wait...'
-STOP_PROCESSING = 'Halting process, please wait...'
-LOADING_MODELS = 'Loading models...'
+# START_PROCESSING = 'Start Processing'
+# WAIT_PROCESSING = 'Please wait...'
+# STOP_PROCESSING = 'Halting process, please wait...'
+# LOADING_MODELS = 'Loading models...'
 
 #---Messages and Logs----
 
-MISSING_MODEL = 'missing'
-MODEL_PRESENT = 'present'
+# MISSING_MODEL = 'missing'
+# MODEL_PRESENT = 'present'
 
-UNRECOGNIZED_MODEL = 'Unrecognized Model Detected', ' is an unrecognized model.\n\n' + \
-                     'Would you like to select the correct parameters before continuing?'
+# UNRECOGNIZED_MODEL = 'Unrecognized Model Detected', ' is an unrecognized model.\n\n' + \
+#                      'Would you like to select the correct parameters before continuing?'
                      
 STOP_PROCESS_CONFIRM = 'Confirmation', 'You are about to stop all active processes.\n\nAre you sure you wish to continue?'
 NO_ENSEMBLE_SELECTED = 'No Models Selected', 'Please select ensemble and try again.'
@@ -327,41 +327,41 @@ MDX_POP_STEMS = ('Vocals', 'Instrumental', 'Other', 'Drums', 'Bass')
 MDX_POP_NFFT = ('4096', '5120', '6144', '7680', '8192', '16384')
 MDX_POP_DIMF = ('2048', '3072', '4096')
 
-SAVE_ENSEMBLE = 'Save Ensemble'
-CLEAR_ENSEMBLE = 'Clear Selection(s)'
+# SAVE_ENSEMBLE = 'Save Ensemble'
+# CLEAR_ENSEMBLE = 'Clear Selection(s)'
 MENU_SEPARATOR = 35*'•'
-CHOOSE_ENSEMBLE_OPTION = 'Choose Option'
+# CHOOSE_ENSEMBLE_OPTION = 'Choose Option'
 
-INVALID_ENTRY = 'Invalid Input, Please Try Again'
-ENSEMBLE_INPUT_RULE = '1. Only letters, numbers, spaces, and dashes allowed.\n2. No dashes or spaces at the start or end of input.'
+# INVALID_ENTRY = 'Invalid Input, Please Try Again'
+# ENSEMBLE_INPUT_RULE = '1. Only letters, numbers, spaces, and dashes allowed.\n2. No dashes or spaces at the start or end of input.'
 
-ENSEMBLE_OPTIONS = (SAVE_ENSEMBLE, CLEAR_ENSEMBLE)
+# ENSEMBLE_OPTIONS = (self.translator.translate("mainUI.SAVE_ENSEMBLE"), self.translator.translate("mainUI.CLEAR_ENSEMBLE"))
 ENSEMBLE_CHECK = 'ensemble check'
 
-SELECT_SAVED_ENSEMBLE = 'Select Saved Ensemble'
-SELECT_SAVED_SETTING = 'Select Saved Setting'
-ENSEMBLE_OPTION = "Ensemble Customization Options"
-MDX_OPTION = "Advanced MDX-Net Options"
-DEMUCS_OPTION = "Advanced Demucs Options"
-VR_OPTION = "Advanced VR Options"
-HELP_OPTION = "Open Information Guide"
-ERROR_OPTION = "Open Error Log"
-VERIFY_BEGIN = 'Verifying file '
-SAMPLE_BEGIN = 'Creating Sample '
-MODEL_MISSING_CHECK = 'Model Missing:'
+# SELECT_SAVED_ENSEMBLE = 'Select Saved Ensemble'
+# SELECT_SAVED_SETTING = 'Select Saved Setting'
+# ENSEMBLE_OPTION = "Ensemble Customization Options"
+# MDX_OPTION = "Advanced MDX-Net Options"
+# DEMUCS_OPTION = "Advanced Demucs Options"
+# VR_OPTION = "Advanced VR Options"
+# HELP_OPTION = "Open Information Guide"
+# ERROR_OPTION = "Open Error Log"
+# VERIFY_BEGIN = 'Verifying file '
+# SAMPLE_BEGIN = 'Creating Sample '
+# MODEL_MISSING_CHECK = 'Model Missing:'
 
 # Audio Player
 
-PLAYING_SONG = ": Playing"
-PAUSE_SONG = ": Paused"
-STOP_SONG = ": Stopped"
+# PLAYING_SONG = ": Playing"
+# PAUSE_SONG = ": Paused"
+# STOP_SONG = ": Stopped"
 
-SELECTED_VER = 'Selected'
-DETECTED_VER = 'Detected'
+# SELECTED_VER = 'Selected'
+# DETECTED_VER = 'Detected'
 
-SAMPLE_MODE_CHECKBOX = lambda v:f'Sample Mode ({v}s)'
-REMOVED_FILES = lambda r, e:f'Audio Input Verification Report:\n\nRemoved Files:\n\n{r}\n\nError Details:\n\n{e}'
-ADVANCED_SETTINGS = (ENSEMBLE_OPTION, MDX_OPTION, DEMUCS_OPTION, VR_OPTION, HELP_OPTION, ERROR_OPTION)
+# SAMPLE_MODE_CHECKBOX = lambda v:f'Sample Mode ({v}s)'
+# REMOVED_FILES = lambda r, e:f'Audio Input Verification Report:\n\nRemoved Files:\n\n{r}\n\nError Details:\n\n{e}'
+# ADVANCED_SETTINGS = (ENSEMBLE_OPTION, MDX_OPTION, DEMUCS_OPTION, VR_OPTION, HELP_OPTION, ERROR_OPTION)
 
 WAV = 'WAV'
 FLAC = 'FLAC'
@@ -370,13 +370,13 @@ MP3 = 'MP3'
 MP3_BIT_RATES = ('96k', '128k', '160k', '224k', '256k', '320k')
 WAV_TYPE = ('PCM_U8', 'PCM_16', 'PCM_24', 'PCM_32', '32-bit Float', '64-bit Float')
 
-SELECT_SAVED_SET = 'Choose Option'
-SAVE_SETTINGS = 'Save Current Settings'
-RESET_TO_DEFAULT = 'Reset to Default'
-RESET_FULL_TO_DEFAULT = 'Reset to Default'
-RESET_PM_TO_DEFAULT = 'Reset All Application Settings to Default'
+# SELECT_SAVED_SET = 'Choose Option'
+# SAVE_SETTINGS = 'Save Current Settings'
+# RESET_TO_DEFAULT = 'Reset to Default'
+# RESET_FULL_TO_DEFAULT = 'Reset to Default'
+# RESET_PM_TO_DEFAULT = 'Reset All Application Settings to Default'
 
-SAVE_SET_OPTIONS = (SAVE_SETTINGS, RESET_TO_DEFAULT)
+# SAVE_SET_OPTIONS = (self.translator.translate("mainUI.SAVE_SETTINGS"), self.translator.translate("RESET_TO_DEFAULT"))
 
 TIME_PITCH = ('1.0', '2.0', '3.0', '4.0')
 TIME_TEXT = '_time_stretched'
@@ -583,202 +583,202 @@ SETTING_CHECK = ('vr_model',
 
 # Message Box Text
 
-INVALID_INPUT = 'Invalid Input', 'The input is invalid.\n\nPlease verify the input still exists or is valid and try again.'
-INVALID_EXPORT = 'Invalid Export Directory', 'You have selected an invalid export directory.\n\nPlease make sure the selected directory still exists.'
-INVALID_ENSEMBLE = 'Not Enough Models', 'You must select 2 or more models to run ensemble.'
-INVALID_MODEL = 'No Model Chosen', 'You must select an model to continue.'
-MISSING_MODEL = 'Model Missing', 'The selected model is missing or not valid.'
-ERROR_OCCURED = 'Error Occured', '\n\nWould you like to open the error log for more details?\n'
+# INVALID_INPUT = 'Invalid Input', 'The input is invalid.\n\nPlease verify the input still exists or is valid and try again.'
+# INVALID_EXPORT = 'Invalid Export Directory', 'You have selected an invalid export directory.\n\nPlease make sure the selected directory still exists.'
+# INVALID_ENSEMBLE = 'Not Enough Models', 'You must select 2 or more models to run ensemble.'
+# INVALID_MODEL = 'No Model Chosen', 'You must select an model to continue.'
+# MISSING_MODEL = 'Model Missing', 'The selected model is missing or not valid.'
+# ERROR_OCCURED = 'Error Occured', '\n\nWould you like to open the error log for more details?\n'
 
 # GUI Text Constants
 
-BACK_TO_MAIN_MENU = 'Back to Main Menu'
+# BACK_TO_MAIN_MENU = 'Back to Main Menu'
 
 # Help Hint Text
 
-INTERNAL_MODEL_ATT = 'Internal model attribute. \n\n ***Do not change this setting if you are unsure!***'
-STOP_HELP = 'Halts any running processes. \n A pop-up window will ask the user to confirm the action.'
-SETTINGS_HELP = 'Opens the main settings guide. This window includes the \"Download Center\"'
-COMMAND_TEXT_HELP = 'Provides information on the progress of the current process.'
-SAVE_CURRENT_SETTINGS_HELP = 'Allows the user to open any saved settings or save the current application settings.'
-CHUNKS_HELP = ('For MDX-Net, all values use the same amount of resources. Using chunks is no longer recommended.\n\n' + \
-                '• This option is now only for output quality.\n' + \
-                '• Some tracks may fare better depending on the value.\n' + \
-                '• Some tracks may fare worse depending on the value.\n' + \
-                '• Larger chunk sizes use will take less time to process.\n' +\
-                '• Smaller chunk sizes use will take more time to process.\n')
-CHUNKS_DEMUCS_HELP = ('This option allows the user to reduce (or increase) RAM or V-RAM usage.\n\n' + \
-                '• Smaller chunk sizes use less RAM or V-RAM but can also increase processing times.\n' + \
-                '• Larger chunk sizes use more RAM or V-RAM but can also reduce processing times.\n' + \
-                '• Selecting \"Auto\" calculates an appropriate chuck size based on how much RAM or V-RAM your system has.\n' + \
-                '• Selecting \"Full\" will process the track as one whole chunk. (not recommended)\n' + \
-                '• The default selection is \"Auto\".')
-MARGIN_HELP = 'Selects the frequency margins to slice the chunks from.\n\n• The recommended margin size is 44100.\n• Other values can give unpredictable results.'
-AGGRESSION_SETTING_HELP = ('This option allows you to set how strong the primary stem extraction will be.\n\n' + \
-                           '• The range is 0-100.\n' + \
-                           '• Higher values perform deeper extractions.\n' + \
-                           '• The default is 10 for instrumental & vocal models.\n' + \
-                           '• Values over 10 can result in muddy-sounding instrumentals for the non-vocal models')
-WINDOW_SIZE_HELP = ('The smaller your window size, the better your conversions will be. \nHowever, a smaller window means longer conversion times and heavier resource usage.\n\n' + \
-                    'Breakdown of the selectable window size values:\n' + \
-                    '• 1024 - Low conversion quality, shortest conversion time, low resource usage.\n' + \
-                    '• 512 - Average conversion quality, average conversion time, normal resource usage.\n' + \
-                    '• 320 - Better conversion quality.')
-DEMUCS_STEMS_HELP = ('Here, you can choose which stem to extract using the selected model.\n\n' +\
-                     'Stem Selections:\n\n' +\
-                     '• All Stems - Saves all of the stems the model is able to extract.\n' +\
-                     '• Vocals - Pulls vocal stem only.\n' +\
-                     '• Other - Pulls other stem only.\n' +\
-                     '• Bass - Pulls bass stem only.\n' +\
-                     '• Drums - Pulls drum stem only.\n')
-SEGMENT_HELP = ('This option allows the user to reduce (or increase) RAM or V-RAM usage.\n\n' + \
-                '• Smaller segment sizes use less RAM or V-RAM but can also increase processing times.\n' + \
-                '• Larger segment sizes use more RAM or V-RAM but can also reduce processing times.\n' + \
-                '• Selecting \"Default\" uses the recommended segment size.\n' + \
-                '• It is recommended that you not use segments with \"Chunking\".')
-ENSEMBLE_MAIN_STEM_HELP = 'Allows the user to select the type of stems they wish to ensemble.\n\nOptions:\n\n' +\
-                          f'• {VOCAL_PAIR} - The primary stem will be the vocals and the secondary stem will be the the instrumental\n' +\
-                          f'• {OTHER_PAIR} - The primary stem will be other and the secondary stem will be no other (the mixture without the \'other\' stem)\n' +\
-                          f'• {BASS_PAIR} - The primary stem will be bass and the secondary stem will be no bass (the mixture without the \'bass\' stem)\n' +\
-                          f'• {DRUM_PAIR} - The primary stem will be drums and the secondary stem will be no drums (the mixture without the \'drums\' stem)\n' +\
-                          f'• {FOUR_STEM_ENSEMBLE} - This option will gather all the 4 stem Demucs models and ensemble all of the outputs.\n'
-ENSEMBLE_TYPE_HELP = 'Allows the user to select the ensemble algorithm to be used to generate the final output.\n\nExample & Other Note:\n\n' +\
-                     f'• {MAX_MIN} - If this option is chosen, the primary stem outputs will be processed through \nthe \'Max Spec\' algorithm, and the secondary stem will be processed through the \'Min Spec\' algorithm.\n' +\
-                     f'• Only a single algorithm will be shown when the \'4 Stem Ensemble\' option is chosen.\n\nAlgorithm Details:\n\n' +\
-                     f'• {MAX_SPEC} - This algorithm combines the final results and generates the highest possible output from them.\nFor example, if this algorithm were processing vocal stems, you would get the fullest possible \n' +\
-                        'result making the ensembled vocal stem sound cleaner. However, it might result in more unwanted artifacts.\n' +\
-                     f'• {MIN_SPEC} - This algorithm combines the results and generates the lowest possible output from them.\nFor example, if this algorithm were processing instrumental stems, you would get the cleanest possible result \n' +\
-                        'result, eliminating more unwanted artifacts. However, the result might also sound \'muddy\' and lack a fuller sound.\n' +\
-                     f'• {AUDIO_AVERAGE} - This algorithm simply combines the results and averages all of them together. \n'
-ENSEMBLE_LISTBOX_HELP = 'List of the all the models available for the main stem pair selected.'
-IS_GPU_CONVERSION_HELP = ('When checked, the application will attempt to use your GPU (if you have one).\n' +\
-                         'If you do not have a GPU but have this checked, the application will default to your CPU.\n\n' +\
-                         'Note: CPU conversions are much slower than those processed through the GPU.')
-SAVE_STEM_ONLY_HELP = 'Allows the user to save only the selected stem.'
-IS_NORMALIZATION_HELP = 'Normalizes output to prevent clipping.'
-CROP_SIZE_HELP = '**Only compatible with select models only!**\n\n Setting should match training crop-size value. Leave as is if unsure.'
-IS_TTA_HELP = ('This option performs Test-Time-Augmentation to improve the separation quality.\n\n' +\
-               'Note: Having this selected will increase the time it takes to complete a conversion')
-IS_POST_PROCESS_HELP = ('This option can potentially identify leftover instrumental artifacts within the vocal outputs. \nThis option may improve the separation of some songs.\n\n' +\
-                       'Note: Selecting this option can adversely affect the conversion process, depending on the track. Because of this, it is only recommended as a last resort.')
-IS_HIGH_END_PROCESS_HELP = 'The application will mirror the missing frequency range of the output.'
-SHIFTS_HELP = ('Performs multiple predictions with random shifts of the input and averages them.\n\n' +\
-              '• The higher number of shifts, the longer the prediction will take. \n- Not recommended unless you have a GPU.')
-OVERLAP_HELP = 'This option controls the amount of overlap between prediction windows (for Demucs one window is 10 seconds)'
-IS_CHUNK_DEMUCS_HELP = '• Enables \"Chunks\".\n• We recommend you not enable this option with \"Split Mode\" enabled or with the Demucs v4 Models.'
-IS_CHUNK_MDX_NET_HELP = '• Enables \"Chunks\".\n• Using this option for MDX-Net no longer effects RAM usage.\n• Having this enabled will effect output quality, for better or worse depending on the set value.'
-IS_SPLIT_MODE_HELP = ('• Enables \"Segments\". \n• We recommend you not enable this option with \"Enable Chunks\".\n' +\
-                      '• Deselecting this option is only recommended for those with powerful PCs or if using \"Chunk\" mode instead.')
-IS_DEMUCS_COMBINE_STEMS_HELP = 'The application will create the secondary stem by combining the remaining stems \ninstead of inverting the primary stem with the mixture.'
-COMPENSATE_HELP = 'Compensates the audio of the primary stems to allow for a better secondary stem.'
-IS_DENOISE_HELP = '• This option removes a majority of the noise generated by the MDX-Net models.\n• The conversion will take nearly twice as long with this enabled.'
-CLEAR_CACHE_HELP = 'Clears any user selected model settings for previously unrecognized models.'
-IS_SAVE_ALL_OUTPUTS_ENSEMBLE_HELP = 'Enabling this option will keep all indivudual outputs generated by an ensemble.'
-IS_APPEND_ENSEMBLE_NAME_HELP = 'The application will append the ensemble name to the final output \nwhen this option is enabled.'
-DONATE_HELP = 'Takes the user to an external web-site to donate to this project!'
-IS_INVERT_SPEC_HELP = '• This option may produce a better secondary stem.\n• Inverts primary stem with mixture using spectragrams instead of wavforms.\n• This inversion method is slightly slower.'
-IS_MIXER_MODE_HELP = '• This option may improve separations for outputs from 4-stem models.\n• Might produce more noise.\n• This option might slow down separation time.'
-IS_TESTING_AUDIO_HELP = 'Appends a unique 10 digit number to output files so the user \ncan compare results with different settings.'
-IS_MODEL_TESTING_AUDIO_HELP = 'Appends the model name to output files so the user \ncan compare results with different settings.'
-IS_ACCEPT_ANY_INPUT_HELP = 'The application will accept any input when enabled, even if it does not have an audio format extension.\n\nThis is for experimental purposes, and having it enabled is not recommended.'
-IS_TASK_COMPLETE_HELP = 'When enabled, chimes will be heard when a process completes or fails.'
-IS_CREATE_MODEL_FOLDER_HELP = 'Two new directories will be generated for the outputs in \nthe export directory after each conversion.\n\n' +\
-                              '• First directory - Named after the model.\n' +\
-                              '• Second directory - Named after the track.\n\n' +\
-                              '• Example: \n\n' +\
-                              '─ Export Directory\n' +\
-                              '   └── First Directory\n' +\
-                              '           └── Second Directory\n' +\
-                              '                    └── Output File(s)'
-DELETE_YOUR_SETTINGS_HELP = 'This menu contains your saved settings. You will be asked to \nconfirm if you wish to delete the selected setting.'
-SET_STEM_NAME_HELP = 'Choose the primary stem for the selected model.'
-MDX_DIM_T_SET_HELP = INTERNAL_MODEL_ATT
-MDX_DIM_F_SET_HELP = INTERNAL_MODEL_ATT
-MDX_N_FFT_SCALE_SET_HELP = 'Set the N_FFT size the model was trained with.'
-POPUP_COMPENSATE_HELP = f'Choose the appropriate voluem compensattion for the selected model\n\nReminder: {COMPENSATE_HELP}'
-VR_MODEL_PARAM_HELP = 'Choose the parameters needed to run the selected model.'
-CHOSEN_ENSEMBLE_HELP = 'Select saved enselble or save current ensemble.\n\nDefault Selections:\n\n• Save the current ensemble.\n• Clears all current model selections.'
-CHOSEN_PROCESS_METHOD_HELP = 'Here, you choose between different Al networks and algorithms to process your track.\n\n' +\
-                             'There are five options:\n\n' +\
-                             '• VR Architecture - These models use magnitude spectrograms for Source Separation.\n' +\
-                             '• MDX-Net - These models use Hybrid Spectrogram/Waveform for Source Separation.\n' +\
-                             '• Demucs v3 - These models use Hybrid Spectrogram/Waveform for Source Separation.\n' +\
-                             '• Ensemble Mode - Here, you can get the best results from multiple models and networks.\n' +\
-                             '• Audio Tools - These are additional tools for added convenience.'
-INPUT_FOLDER_ENTRY_HELP = 'Select Input:\n\nHere is where you select the audio files(s) you wish to process.'
-INPUT_FOLDER_ENTRY_HELP_2 = 'Input Option Menu:\n\nClick here to access the input option menu.'
-OUTPUT_FOLDER_ENTRY_HELP = 'Select Output:\n\nHere is where you select the directory where your processed files are to be saved.'
-INPUT_FOLDER_BUTTON_HELP = 'Open Input Folder Button: \n\nOpens the directory containing the selected input audio file(s).'
-OUTPUT_FOLDER_BUTTON_HELP = 'Open Output Folder Button: \n\nOpens the selected output folder.'
-CHOOSE_MODEL_HELP = 'Each process method comes with its own set of options and models.\n\nHere is where you choose the model associated with the selected process method.'
-FORMAT_SETTING_HELP = 'Save outputs as '
-SECONDARY_MODEL_ACTIVATE_HELP = 'When enabled, the application will run an additional inference with the selected model(s) above.'
-SECONDARY_MODEL_HELP = 'Choose the secondary model associated with this stem you wish to run with the current process method.'
-SECONDARY_MODEL_SCALE_HELP = 'The scale determines how the final audio outputs will be averaged between the primary and secondary models.\n\nFor example:\n\n' +\
-                             '• 10% - 10 percent of the main model result will be factored into the final result.\n' +\
-                             '• 50% - The results from the main and secondary models will be averaged evenly.\n' +\
-                             '• 90% - 90 percent of the main model result will be factored into the final result.'
-PRE_PROC_MODEL_ACTIVATE_HELP = 'The application will run an inference with the selected model above, pulling only the instrumental stem when enabled. \nFrom there, all of the non-vocal stems will be pulled from the generated instrumental.\n\nNotes:\n\n' +\
-                               '• This option can significantly reduce vocal bleed within the non-vocal stems.\n' +\
-                               '• It is only available in Demucs.\n' +\
-                               '• It is only compatible with non-vocal and non-instrumental stem outputs.\n' +\
-                               '• This will increase thetotal processing time.\n' +\
-                               '• Only VR and MDX-Net Vocal or Instrumental models are selectable above.'
+# INTERNAL_MODEL_ATT = 'Internal model attribute. \n\n ***Do not change this setting if you are unsure!***'
+# STOP_HELP = 'Halts any running processes. \n A pop-up window will ask the user to confirm the action.'
+# SETTINGS_HELP = 'Opens the main settings guide. This window includes the \"Download Center\"'
+# COMMAND_TEXT_HELP = 'Provides information on the progress of the current process.'
+# SAVE_CURRENT_SETTINGS_HELP = 'Allows the user to open any saved settings or save the current application settings.'
+# CHUNKS_HELP = ('For MDX-Net, all values use the same amount of resources. Using chunks is no longer recommended.\n\n' + \
+#                 '• This option is now only for output quality.\n' + \
+#                 '• Some tracks may fare better depending on the value.\n' + \
+#                 '• Some tracks may fare worse depending on the value.\n' + \
+#                 '• Larger chunk sizes use will take less time to process.\n' +\
+#                 '• Smaller chunk sizes use will take more time to process.\n')
+# CHUNKS_DEMUCS_HELP = ('This option allows the user to reduce (or increase) RAM or V-RAM usage.\n\n' + \
+#                 '• Smaller chunk sizes use less RAM or V-RAM but can also increase processing times.\n' + \
+#                 '• Larger chunk sizes use more RAM or V-RAM but can also reduce processing times.\n' + \
+#                 '• Selecting \"Auto\" calculates an appropriate chuck size based on how much RAM or V-RAM your system has.\n' + \
+#                 '• Selecting \"Full\" will process the track as one whole chunk. (not recommended)\n' + \
+#                 '• The default selection is \"Auto\".')
+# MARGIN_HELP = 'Selects the frequency margins to slice the chunks from.\n\n• The recommended margin size is 44100.\n• Other values can give unpredictable results.'
+# AGGRESSION_SETTING_HELP = ('This option allows you to set how strong the primary stem extraction will be.\n\n' + \
+#                            '• The range is 0-100.\n' + \
+#                            '• Higher values perform deeper extractions.\n' + \
+#                            '• The default is 10 for instrumental & vocal models.\n' + \
+#                            '• Values over 10 can result in muddy-sounding instrumentals for the non-vocal models')
+# WINDOW_SIZE_HELP = ('The smaller your window size, the better your conversions will be. \nHowever, a smaller window means longer conversion times and heavier resource usage.\n\n' + \
+#                     'Breakdown of the selectable window size values:\n' + \
+#                     '• 1024 - Low conversion quality, shortest conversion time, low resource usage.\n' + \
+#                     '• 512 - Average conversion quality, average conversion time, normal resource usage.\n' + \
+#                     '• 320 - Better conversion quality.')
+# DEMUCS_STEMS_HELP = ('Here, you can choose which stem to extract using the selected model.\n\n' +\
+#                      'Stem Selections:\n\n' +\
+#                      '• All Stems - Saves all of the stems the model is able to extract.\n' +\
+#                      '• Vocals - Pulls vocal stem only.\n' +\
+#                      '• Other - Pulls other stem only.\n' +\
+#                      '• Bass - Pulls bass stem only.\n' +\
+#                      '• Drums - Pulls drum stem only.\n')
+# SEGMENT_HELP = ('This option allows the user to reduce (or increase) RAM or V-RAM usage.\n\n' + \
+#                 '• Smaller segment sizes use less RAM or V-RAM but can also increase processing times.\n' + \
+#                 '• Larger segment sizes use more RAM or V-RAM but can also reduce processing times.\n' + \
+#                 '• Selecting \"Default\" uses the recommended segment size.\n' + \
+#                 '• It is recommended that you not use segments with \"Chunking\".')
+# ENSEMBLE_MAIN_STEM_HELP = 'Allows the user to select the type of stems they wish to ensemble.\n\nOptions:\n\n' +\
+#                           f'• {VOCAL_PAIR} - The primary stem will be the vocals and the secondary stem will be the the instrumental\n' +\
+#                           f'• {OTHER_PAIR} - The primary stem will be other and the secondary stem will be no other (the mixture without the \'other\' stem)\n' +\
+#                           f'• {BASS_PAIR} - The primary stem will be bass and the secondary stem will be no bass (the mixture without the \'bass\' stem)\n' +\
+#                           f'• {DRUM_PAIR} - The primary stem will be drums and the secondary stem will be no drums (the mixture without the \'drums\' stem)\n' +\
+#                           f'• {FOUR_STEM_ENSEMBLE} - This option will gather all the 4 stem Demucs models and ensemble all of the outputs.\n'
+# ENSEMBLE_TYPE_HELP = 'Allows the user to select the ensemble algorithm to be used to generate the final output.\n\nExample & Other Note:\n\n' +\
+#                      f'• {MAX_MIN} - If this option is chosen, the primary stem outputs will be processed through \nthe \'Max Spec\' algorithm, and the secondary stem will be processed through the \'Min Spec\' algorithm.\n' +\
+#                      f'• Only a single algorithm will be shown when the \'4 Stem Ensemble\' option is chosen.\n\nAlgorithm Details:\n\n' +\
+#                      f'• {MAX_SPEC} - This algorithm combines the final results and generates the highest possible output from them.\nFor example, if this algorithm were processing vocal stems, you would get the fullest possible \n' +\
+#                         'result making the ensembled vocal stem sound cleaner. However, it might result in more unwanted artifacts.\n' +\
+#                      f'• {MIN_SPEC} - This algorithm combines the results and generates the lowest possible output from them.\nFor example, if this algorithm were processing instrumental stems, you would get the cleanest possible result \n' +\
+#                         'result, eliminating more unwanted artifacts. However, the result might also sound \'muddy\' and lack a fuller sound.\n' +\
+#                      f'• {AUDIO_AVERAGE} - This algorithm simply combines the results and averages all of them together. \n'
+# ENSEMBLE_LISTBOX_HELP = 'List of the all the models available for the main stem pair selected.'
+# IS_GPU_CONVERSION_HELP = ('When checked, the application will attempt to use your GPU (if you have one).\n' +\
+#                          'If you do not have a GPU but have this checked, the application will default to your CPU.\n\n' +\
+#                          'Note: CPU conversions are much slower than those processed through the GPU.')
+# SAVE_STEM_ONLY_HELP = 'Allows the user to save only the selected stem.'
+# IS_NORMALIZATION_HELP = 'Normalizes output to prevent clipping.'
+# CROP_SIZE_HELP = '**Only compatible with select models only!**\n\n Setting should match training crop-size value. Leave as is if unsure.'
+# IS_TTA_HELP = ('This option performs Test-Time-Augmentation to improve the separation quality.\n\n' +\
+#                'Note: Having this selected will increase the time it takes to complete a conversion')
+# IS_POST_PROCESS_HELP = ('This option can potentially identify leftover instrumental artifacts within the vocal outputs. \nThis option may improve the separation of some songs.\n\n' +\
+#                        'Note: Selecting this option can adversely affect the conversion process, depending on the track. Because of this, it is only recommended as a last resort.')
+# IS_HIGH_END_PROCESS_HELP = 'The application will mirror the missing frequency range of the output.'
+# SHIFTS_HELP = ('Performs multiple predictions with random shifts of the input and averages them.\n\n' +\
+#               '• The higher number of shifts, the longer the prediction will take. \n- Not recommended unless you have a GPU.')
+# OVERLAP_HELP = 'This option controls the amount of overlap between prediction windows (for Demucs one window is 10 seconds)'
+# IS_CHUNK_DEMUCS_HELP = '• Enables \"Chunks\".\n• We recommend you not enable this option with \"Split Mode\" enabled or with the Demucs v4 Models.'
+# IS_CHUNK_MDX_NET_HELP = '• Enables \"Chunks\".\n• Using this option for MDX-Net no longer effects RAM usage.\n• Having this enabled will effect output quality, for better or worse depending on the set value.'
+# IS_SPLIT_MODE_HELP = ('• Enables \"Segments\". \n• We recommend you not enable this option with \"Enable Chunks\".\n' +\
+#                       '• Deselecting this option is only recommended for those with powerful PCs or if using \"Chunk\" mode instead.')
+# IS_DEMUCS_COMBINE_STEMS_HELP = 'The application will create the secondary stem by combining the remaining stems \ninstead of inverting the primary stem with the mixture.'
+# COMPENSATE_HELP = 'Compensates the audio of the primary stems to allow for a better secondary stem.'
+# IS_DENOISE_HELP = '• This option removes a majority of the noise generated by the MDX-Net models.\n• The conversion will take nearly twice as long with this enabled.'
+# CLEAR_CACHE_HELP = 'Clears any user selected model settings for previously unrecognized models.'
+# IS_SAVE_ALL_OUTPUTS_ENSEMBLE_HELP = 'Enabling this option will keep all indivudual outputs generated by an ensemble.'
+# IS_APPEND_ENSEMBLE_NAME_HELP = 'The application will append the ensemble name to the final output \nwhen this option is enabled.'
+# DONATE_HELP = 'Takes the user to an external web-site to donate to this project!'
+# IS_INVERT_SPEC_HELP = '• This option may produce a better secondary stem.\n• Inverts primary stem with mixture using spectragrams instead of wavforms.\n• This inversion method is slightly slower.'
+# IS_MIXER_MODE_HELP = '• This option may improve separations for outputs from 4-stem models.\n• Might produce more noise.\n• This option might slow down separation time.'
+# IS_TESTING_AUDIO_HELP = 'Appends a unique 10 digit number to output files so the user \ncan compare results with different settings.'
+# IS_MODEL_TESTING_AUDIO_HELP = 'Appends the model name to output files so the user \ncan compare results with different settings.'
+# IS_ACCEPT_ANY_INPUT_HELP = 'The application will accept any input when enabled, even if it does not have an audio format extension.\n\nThis is for experimental purposes, and having it enabled is not recommended.'
+# IS_TASK_COMPLETE_HELP = 'When enabled, chimes will be heard when a process completes or fails.'
+# IS_CREATE_MODEL_FOLDER_HELP = 'Two new directories will be generated for the outputs in \nthe export directory after each conversion.\n\n' +\
+#                               '• First directory - Named after the model.\n' +\
+#                               '• Second directory - Named after the track.\n\n' +\
+#                               '• Example: \n\n' +\
+#                               '─ Export Directory\n' +\
+#                               '   └── First Directory\n' +\
+#                               '           └── Second Directory\n' +\
+#                               '                    └── Output File(s)'
+# DELETE_YOUR_SETTINGS_HELP = 'This menu contains your saved settings. You will be asked to \nconfirm if you wish to delete the selected setting.'
+# SET_STEM_NAME_HELP = 'Choose the primary stem for the selected model.'
+# MDX_DIM_T_SET_HELP = INTERNAL_MODEL_ATT
+# MDX_DIM_F_SET_HELP = INTERNAL_MODEL_ATT
+# MDX_N_FFT_SCALE_SET_HELP = 'Set the N_FFT size the model was trained with.'
+# POPUP_COMPENSATE_HELP = f'Choose the appropriate voluem compensattion for the selected model\n\nReminder: {COMPENSATE_HELP}'
+# VR_MODEL_PARAM_HELP = 'Choose the parameters needed to run the selected model.'
+# CHOSEN_ENSEMBLE_HELP = 'Select saved enselble or save current ensemble.\n\nDefault Selections:\n\n• Save the current ensemble.\n• Clears all current model selections.'
+# CHOSEN_PROCESS_METHOD_HELP = 'Here, you choose between different Al networks and algorithms to process your track.\n\n' +\
+#                              'There are five options:\n\n' +\
+#                              '• VR Architecture - These models use magnitude spectrograms for Source Separation.\n' +\
+#                              '• MDX-Net - These models use Hybrid Spectrogram/Waveform for Source Separation.\n' +\
+#                              '• Demucs v3 - These models use Hybrid Spectrogram/Waveform for Source Separation.\n' +\
+#                              '• Ensemble Mode - Here, you can get the best results from multiple models and networks.\n' +\
+#                              '• Audio Tools - These are additional tools for added convenience.'
+# INPUT_FOLDER_ENTRY_HELP = 'Select Input:\n\nHere is where you select the audio files(s) you wish to process.'
+# INPUT_FOLDER_ENTRY_HELP_2 = 'Input Option Menu:\n\nClick here to access the input option menu.'
+# OUTPUT_FOLDER_ENTRY_HELP = 'Select Output:\n\nHere is where you select the directory where your processed files are to be saved.'
+# INPUT_FOLDER_BUTTON_HELP = 'Open Input Folder Button: \n\nOpens the directory containing the selected input audio file(s).'
+# OUTPUT_FOLDER_BUTTON_HELP = 'Open Output Folder Button: \n\nOpens the selected output folder.'
+# CHOOSE_MODEL_HELP = 'Each process method comes with its own set of options and models.\n\nHere is where you choose the model associated with the selected process method.'
+# FORMAT_SETTING_HELP = 'Save outputs as '
+# SECONDARY_MODEL_ACTIVATE_HELP = 'When enabled, the application will run an additional inference with the selected model(s) above.'
+# SECONDARY_MODEL_HELP = 'Choose the secondary model associated with this stem you wish to run with the current process method.'
+# SECONDARY_MODEL_SCALE_HELP = 'The scale determines how the final audio outputs will be averaged between the primary and secondary models.\n\nFor example:\n\n' +\
+#                              '• 10% - 10 percent of the main model result will be factored into the final result.\n' +\
+#                              '• 50% - The results from the main and secondary models will be averaged evenly.\n' +\
+#                              '• 90% - 90 percent of the main model result will be factored into the final result.'
+# PRE_PROC_MODEL_ACTIVATE_HELP = 'The application will run an inference with the selected model above, pulling only the instrumental stem when enabled. \nFrom there, all of the non-vocal stems will be pulled from the generated instrumental.\n\nNotes:\n\n' +\
+#                                '• This option can significantly reduce vocal bleed within the non-vocal stems.\n' +\
+#                                '• It is only available in Demucs.\n' +\
+#                                '• It is only compatible with non-vocal and non-instrumental stem outputs.\n' +\
+#                                '• This will increase thetotal processing time.\n' +\
+#                                '• Only VR and MDX-Net Vocal or Instrumental models are selectable above.'
 
-AUDIO_TOOLS_HELP = 'Here, you choose between different audio tools to process your track.\n\n' +\
-                               '• Manual Ensemble - You must have 2 or more files selected as your inputs. Allows the user to run their tracks through \nthe same algorithms used in Ensemble Mode.\n' +\
-                               '• Align Inputs - You must have exactly 2 files selected as your inputs. The second input will be aligned with the first input.\n' +\
-                               '• Time Stretch - The user can speed up or slow down the selected inputs.\n' +\
-                               '• Change Pitch - The user can change the pitch for the selected inputs.\n'
-PRE_PROC_MODEL_INST_MIX_HELP = 'When enabled, the application will generate a third output without the selected stem and vocals.'         
-MODEL_SAMPLE_MODE_HELP = 'Allows the user to process only part of a track to sample settings or a model without \nrunning a full conversion.\n\nNotes:\n\n' +\
-                         '• The number in the parentheses is the current number of seconds the generated sample will be.\n' +\
-                         '• You can choose the number of seconds to extract from the track in the \"Additional Settings\" menu.'
-                    
-POST_PROCESS_THREASHOLD_HELP = 'Allows the user to control the intensity of the Post_process option.\n\nNotes:\n\n' +\
-                               '• Higher values potentially remove more artifacts. However, bleed might increase.\n' +\
-                               '• Lower values limit artifact removal.'
+# AUDIO_TOOLS_HELP = 'Here, you choose between different audio tools to process your track.\n\n' +\
+#                                '• Manual Ensemble - You must have 2 or more files selected as your inputs. Allows the user to run their tracks through \nthe same algorithms used in Ensemble Mode.\n' +\
+#                                '• Align Inputs - You must have exactly 2 files selected as your inputs. The second input will be aligned with the first input.\n' +\
+#                                '• Time Stretch - The user can speed up or slow down the selected inputs.\n' +\
+#                                '• Change Pitch - The user can change the pitch for the selected inputs.\n'
+# PRE_PROC_MODEL_INST_MIX_HELP = 'When enabled, the application will generate a third output without the selected stem and vocals.'
+# MODEL_SAMPLE_MODE_HELP = 'Allows the user to process only part of a track to sample settings or a model without \nrunning a full conversion.\n\nNotes:\n\n' +\
+#                          '• The number in the parentheses is the current number of seconds the generated sample will be.\n' +\
+#                          '• You can choose the number of seconds to extract from the track in the \"Additional Settings\" menu.'
+#
+# POST_PROCESS_THREASHOLD_HELP = 'Allows the user to control the intensity of the Post_process option.\n\nNotes:\n\n' +\
+#                                '• Higher values potentially remove more artifacts. However, bleed might increase.\n' +\
+#                                '• Lower values limit artifact removal.'
 
-BATCH_SIZE_HELP = 'Specify the number of batches to be processed at a time.\n\nNotes:\n\n' +\
-                               '• Higher values mean more RAM usage but slightly faster processing times.\n' +\
-                               '• Lower values mean less RAM usage but slightly longer processing times.\n' +\
-                               '• Batch size value has no effect on output quality.'
+# BATCH_SIZE_HELP = 'Specify the number of batches to be processed at a time.\n\nNotes:\n\n' +\
+#                                '• Higher values mean more RAM usage but slightly faster processing times.\n' +\
+#                                '• Lower values mean less RAM usage but slightly longer processing times.\n' +\
+#                                '• Batch size value has no effect on output quality.'
                
 # Warning Messages
 
-STORAGE_ERROR = 'Insufficient Storage', 'There is not enough storage on main drive to continue. Your main drive must have at least 3 GB\'s of storage in order for this application function properly. \n\nPlease ensure your main drive has at least 3 GB\'s of storage and try again.\n\n'
-STORAGE_WARNING = 'Available Storage Low', 'Your main drive is running low on storage. Your main drive must have at least 3 GB\'s of storage in order for this application function properly.\n\n'
-CONFIRM_WARNING = '\nAre you sure you wish to continue?'
-PROCESS_FAILED = 'Process failed, please see error log\n'
-EXIT_PROCESS_ERROR = 'Active Process', 'Please stop the active process or wait for it to complete before you exit.'
-EXIT_HALTED_PROCESS_ERROR = 'Halting Process', 'Please wait for the application to finish halting the process before exiting.'
-EXIT_DOWNLOAD_ERROR = 'Active Download', 'Please stop the download or wait for it to complete before you exit.'
-SET_TO_DEFAULT_PROCESS_ERROR = 'Active Process', 'You cannot reset all of the application settings during an active process.'
-SET_TO_ANY_PROCESS_ERROR = 'Active Process', 'You cannot reset the application settings during an active process.'
-RESET_ALL_TO_DEFAULT_WARNING = 'Reset Settings Confirmation', 'All application settings will be set to factory default.\n\nAre you sure you wish to continue?'
-AUDIO_VERIFICATION_CHECK = lambda i, e:f'++++++++++++++++++++++++++++++++++++++++++++++++++++\n\nBroken File Removed: \n\n{i}\n\nError Details:\n\n{e}\n++++++++++++++++++++++++++++++++++++++++++++++++++++'
-INVALID_ONNX_MODEL_ERROR = 'Invalid Model', 'The file selected is not a valid MDX-Net model. Please see the error log for more information.'
+# STORAGE_ERROR = 'Insufficient Storage', 'There is not enough storage on main drive to continue. Your main drive must have at least 3 GB\'s of storage in order for this application function properly. \n\nPlease ensure your main drive has at least 3 GB\'s of storage and try again.\n\n'
+# STORAGE_WARNING = 'Available Storage Low', 'Your main drive is running low on storage. Your main drive must have at least 3 GB\'s of storage in order for this application function properly.\n\n'
+# CONFIRM_WARNING = '\nAre you sure you wish to continue?'
+# PROCESS_FAILED = 'Process failed, please see error log\n'
+# EXIT_PROCESS_ERROR = 'Active Process', 'Please stop the active process or wait for it to complete before you exit.'
+# EXIT_HALTED_PROCESS_ERROR = 'Halting Process', 'Please wait for the application to finish halting the process before exiting.'
+# EXIT_DOWNLOAD_ERROR = 'Active Download', 'Please stop the download or wait for it to complete before you exit.'
+# SET_TO_DEFAULT_PROCESS_ERROR = 'Active Process', 'You cannot reset all of the application settings during an active process.'
+# SET_TO_ANY_PROCESS_ERROR = 'Active Process', 'You cannot reset the application settings during an active process.'
+# RESET_ALL_TO_DEFAULT_WARNING = 'Reset Settings Confirmation', 'All application settings will be set to factory default.\n\nAre you sure you wish to continue?'
+# AUDIO_VERIFICATION_CHECK = lambda i, e:f'++++++++++++++++++++++++++++++++++++++++++++++++++++\n\nBroken File Removed: \n\n{i}\n\nError Details:\n\n{e}\n++++++++++++++++++++++++++++++++++++++++++++++++++++'
+# INVALID_ONNX_MODEL_ERROR = 'Invalid Model', 'The file selected is not a valid MDX-Net model. Please see the error log for more information.'
 
 
 # Separation Text
 
-LOADING_MODEL = 'Loading model...'
-INFERENCE_STEP_1 = 'Running inference...'
-INFERENCE_STEP_1_SEC = 'Running inference (secondary model)...'
-INFERENCE_STEP_1_4_STEM = lambda stem:f'Running inference (secondary model for {stem})...'
-INFERENCE_STEP_1_PRE = 'Running inference (pre-process model)...'
-INFERENCE_STEP_2_PRE = lambda pm, m:f'Loading pre-process model ({pm}: {m})...'
-INFERENCE_STEP_2_SEC = lambda pm, m:f'Loading secondary model ({pm}: {m})...'
-INFERENCE_STEP_2_SEC_CACHED_MODOEL = lambda pm, m:f'Secondary model ({pm}: {m}) cache loaded.\n'
-INFERENCE_STEP_2_PRE_CACHED_MODOEL = lambda pm, m:f'Pre-process model ({pm}: {m}) cache loaded.\n'
-INFERENCE_STEP_2_SEC_CACHED = 'Loading cached secondary model source(s)... Done!\n'
-INFERENCE_STEP_2_PRIMARY_CACHED = 'Model cache loaded.\n'
-INFERENCE_STEP_2 = 'Inference complete.'
-SAVING_STEM = 'Saving ', ' stem...'
-SAVING_ALL_STEMS = 'Saving all stems...'
-ENSEMBLING_OUTPUTS = 'Ensembling outputs...'
-DONE = ' Done!\n'
-ENSEMBLES_SAVED = 'Ensembled outputs saved!\n\n'
+# LOADING_MODEL = 'Loading model...'
+# INFERENCE_STEP_1 = 'Running inference...'
+# INFERENCE_STEP_1_SEC = 'Running inference (secondary model)...'
+# INFERENCE_STEP_1_4_STEM = lambda stem:f'Running inference (secondary model for {stem})...'
+# INFERENCE_STEP_1_PRE = 'Running inference (pre-process model)...'
+# INFERENCE_STEP_2_PRE = lambda pm, m:f'Loading pre-process model ({pm}: {m})...'
+# INFERENCE_STEP_2_SEC = lambda pm, m:f'Loading secondary model ({pm}: {m})...'
+# INFERENCE_STEP_2_SEC_CACHED_MODOEL = lambda pm, m:f'Secondary model ({pm}: {m}) cache loaded.\n'
+# INFERENCE_STEP_2_PRE_CACHED_MODOEL = lambda pm, m:f'Pre-process model ({pm}: {m}) cache loaded.\n'
+# INFERENCE_STEP_2_SEC_CACHED = 'Loading cached secondary model source(s)... Done!\n'
+# INFERENCE_STEP_2_PRIMARY_CACHED = 'Model cache loaded.\n'
+# INFERENCE_STEP_2 = 'Inference complete.'
+# SAVING_STEM = 'Saving ', ' stem...'
+# SAVING_ALL_STEMS = 'Saving all stems...'
+# ENSEMBLING_OUTPUTS = 'Ensembling outputs...'
+# DONE = ' Done!\n'
+# ENSEMBLES_SAVED = 'Ensembled outputs saved!\n\n'
 NEW_LINES = "\n\n"
 NEW_LINE = "\n"
 NO_LINE = ''
@@ -822,10 +822,10 @@ LEFT_BRACKET = "{"
 
 # Manual Downloads
 
-VR_PLACEMENT_TEXT = 'Place models in \"models/VR_Models\" directory.'
-MDX_PLACEMENT_TEXT = 'Place models in \"models/MDX_Net_Models\" directory.'
-DEMUCS_PLACEMENT_TEXT = 'Place models in \"models/Demucs_Models\" directory.'
-DEMUCS_V3_V4_PLACEMENT_TEXT = 'Place items in \"models/Demucs_Models/v3_v4_repo\" directory.'
+# VR_PLACEMENT_TEXT = 'Place models in \"models/VR_Models\" directory.'
+# MDX_PLACEMENT_TEXT = 'Place models in \"models/MDX_Net_Models\" directory.'
+# DEMUCS_PLACEMENT_TEXT = 'Place models in \"models/Demucs_Models\" directory.'
+# DEMUCS_V3_V4_PLACEMENT_TEXT = 'Place items in \"models/Demucs_Models/v3_v4_repo\" directory.'
 
 FULL_DOWNLOAD_LIST_VR = {
                     "VR Arch Single Model v5: 1_HP-UVR": "1_HP-UVR.pth",
@@ -1002,31 +1002,31 @@ FULL_DOWNLOAD_LIST_DEMUCS = {
 
 # Main Menu Labels
 
-CHOOSE_PROC_METHOD_MAIN_LABEL = 'CHOOSE PROCESS METHOD'
-SELECT_SAVED_SETTINGS_MAIN_LABEL = 'SELECT SAVED SETTINGS'
-CHOOSE_MDX_MODEL_MAIN_LABEL = 'CHOOSE MDX-NET MODEL'
-BATCHES_MDX_MAIN_LABEL = 'BATCH SIZE'
-VOL_COMP_MDX_MAIN_LABEL = 'VOLUME COMPENSATION'
-SELECT_VR_MODEL_MAIN_LABEL = 'CHOOSE VR MODEL'
-AGGRESSION_SETTING_MAIN_LABEL = 'AGGRESSION SETTING'
-WINDOW_SIZE_MAIN_LABEL = 'WINDOW SIZE'
-CHOOSE_DEMUCS_MODEL_MAIN_LABEL = 'CHOOSE DEMUCS MODEL'
-CHOOSE_DEMUCS_STEMS_MAIN_LABEL = 'CHOOSE STEM(S)'
-CHOOSE_SEGMENT_MAIN_LABEL = 'SEGMENT'
-ENSEMBLE_OPTIONS_MAIN_LABEL = 'ENSEMBLE OPTIONS'
-CHOOSE_MAIN_PAIR_MAIN_LABEL = 'MAIN STEM PAIR'
-CHOOSE_ENSEMBLE_ALGORITHM_MAIN_LABEL = 'ENSEMBLE ALGORITHM'
-AVAILABLE_MODELS_MAIN_LABEL = 'AVAILABLE MODELS'
-CHOOSE_AUDIO_TOOLS_MAIN_LABEL = 'CHOOSE AUDIO TOOL'
-CHOOSE_MANUAL_ALGORITHM_MAIN_LABEL = 'CHOOSE ALGORITHM'
-CHOOSE_RATE_MAIN_LABEL = 'RATE'
-CHOOSE_SEMITONES_MAIN_LABEL = 'SEMITONES'
-GPU_CONVERSION_MAIN_LABEL = 'GPU Conversion'
+# CHOOSE_PROC_METHOD_MAIN_LABEL = 'CHOOSE PROCESS METHOD'
+# SELECT_SAVED_SETTINGS_MAIN_LABEL = 'SELECT SAVED SETTINGS'
+# CHOOSE_MDX_MODEL_MAIN_LABEL = 'CHOOSE MDX-NET MODEL'
+# BATCHES_MDX_MAIN_LABEL = 'BATCH SIZE'
+# VOL_COMP_MDX_MAIN_LABEL = 'VOLUME COMPENSATION'
+# SELECT_VR_MODEL_MAIN_LABEL = 'CHOOSE VR MODEL'
+# AGGRESSION_SETTING_MAIN_LABEL = 'AGGRESSION SETTING'
+# WINDOW_SIZE_MAIN_LABEL = 'WINDOW SIZE'
+# CHOOSE_DEMUCS_MODEL_MAIN_LABEL = 'CHOOSE DEMUCS MODEL'
+# CHOOSE_DEMUCS_STEMS_MAIN_LABEL = 'CHOOSE STEM(S)'
+# CHOOSE_SEGMENT_MAIN_LABEL = 'SEGMENT'
+# ENSEMBLE_OPTIONS_MAIN_LABEL = 'ENSEMBLE OPTIONS'
+# CHOOSE_MAIN_PAIR_MAIN_LABEL = 'MAIN STEM PAIR'
+# CHOOSE_ENSEMBLE_ALGORITHM_MAIN_LABEL = 'ENSEMBLE ALGORITHM'
+# AVAILABLE_MODELS_MAIN_LABEL = 'AVAILABLE MODELS'
+# CHOOSE_AUDIO_TOOLS_MAIN_LABEL = 'CHOOSE AUDIO TOOL'
+# CHOOSE_MANUAL_ALGORITHM_MAIN_LABEL = 'CHOOSE ALGORITHM'
+# CHOOSE_RATE_MAIN_LABEL = 'RATE'
+# CHOOSE_SEMITONES_MAIN_LABEL = 'SEMITONES'
+# GPU_CONVERSION_MAIN_LABEL = 'GPU Conversion'
 
 if OPERATING_SYSTEM=="Darwin":
-   LICENSE_OS_SPECIFIC_TEXT = '• This application is intended for those running macOS Catalina and above.\n' +\
-                              '• Application functionality for systems running macOS Mojave or lower is not guaranteed.\n' +\
-                              '• Application functionality for older or budget Mac systems is not guaranteed.\n\n'
+   # LICENSE_OS_SPECIFIC_TEXT = '• This application is intended for those running macOS Catalina and above.\n' +\
+   #                            '• Application functionality for systems running macOS Mojave or lower is not guaranteed.\n' +\
+   #                            '• Application functionality for older or budget Mac systems is not guaranteed.\n\n'
    FONT_SIZE_F1 = 13
    FONT_SIZE_F2 = 11
    FONT_SIZE_F3 = 12
@@ -1047,9 +1047,9 @@ if OPERATING_SYSTEM=="Darwin":
    MENU_COMBOBOX_WIDTH = 16
 
 elif OPERATING_SYSTEM=="Linux":
-   LICENSE_OS_SPECIFIC_TEXT = '• This application is intended for those running Linux Ubuntu 18.04+.\n' +\
-                              '• Application functionality for systems running other Linux platforms is not guaranteed.\n' +\
-                              '• Application functionality for older or budget systems is not guaranteed.\n\n'
+   # LICENSE_OS_SPECIFIC_TEXT = '• This application is intended for those running Linux Ubuntu 18.04+.\n' +\
+   #                            '• Application functionality for systems running other Linux platforms is not guaranteed.\n' +\
+   #                            '• Application functionality for older or budget systems is not guaranteed.\n\n'
    FONT_SIZE_F1 = 10
    FONT_SIZE_F2 = 8
    FONT_SIZE_F3 = 9
@@ -1070,9 +1070,9 @@ elif OPERATING_SYSTEM=="Linux":
    MENU_COMBOBOX_WIDTH = 19
     
 elif OPERATING_SYSTEM=="Windows":
-   LICENSE_OS_SPECIFIC_TEXT = '• This application is intended for those running Windows 10 or higher.\n' +\
-                              '• Application functionality for systems running Windows 7 or lower is not guaranteed.\n' +\
-                              '• Application functionality for Intel Pentium & Celeron CPUs systems is not guaranteed.\n\n'
+   # LICENSE_OS_SPECIFIC_TEXT = '• This application is intended for those running Windows 10 or higher.\n' +\
+   #                            '• Application functionality for systems running Windows 7 or lower is not guaranteed.\n' +\
+   #                            '• Application functionality for Intel Pentium & Celeron CPUs systems is not guaranteed.\n\n'
    FONT_SIZE_F1 = 10
    FONT_SIZE_F2 = 8
    FONT_SIZE_F3 = 9
@@ -1093,42 +1093,42 @@ elif OPERATING_SYSTEM=="Windows":
    MENU_COMBOBOX_WIDTH = 19
 
 
-LICENSE_TEXT = lambda a, p:f'Current Application Version: Ultimate Vocal Remover {a}\n' +\
-               f'Current Patch Version: {p}\n\n' +\
-               'Copyright (c) 2022 Ultimate Vocal Remover\n\n' +\
-               'UVR is free and open-source, but MIT licensed. Please credit us if you use our\n' +\
-               f'models or code for projects unrelated to UVR.\n\n{LICENSE_OS_SPECIFIC_TEXT}' +\
-               'This bundle contains the UVR interface, Python, PyTorch, and other\n' +\
-               'dependencies needed to run the application effectively.\n\n' +\
-               'Website Links: This application, System or Service(s) may contain links to\n' +\
-               'other websites and downloads, and they are solely provided to you as an\n' +\
-               'additional convenience. You understand and acknowledge that by clicking\n' +\
-               'or activating such links you are accessing a site or service outside of\n' +\
-               'this application, and that we do not screen, review, approve, or otherwise\n' +\
-               'endorse any content or information contained in these linked websites.\n' +\
-               'You acknowledge and agree that we, our affiliates and partners are not\n' +\
-               'responsible for the contents of any of these linked websites, including\n' +\
-               'the accuracy or availability of information provided by the linked websites,\n' +\
-               'and we make no representations or warranties regarding your use of\n' +\
-               'the linked websites.\n\n' +\
-               'This application is MIT Licensed\n\n' +\
-               'Permission is hereby granted, free of charge, to any person obtaining a copy\n' +\
-               'of this software and associated documentation files (the "Software"), to deal\n' +\
-               'in the Software without restriction, including without limitation the rights\n' +\
-               'to use, copy, modify, merge, publish, distribute, sublicense, and/or sell\n' +\
-               'copies of the Software, and to permit persons to whom the Software is\n' +\
-               'furnished to do so, subject to the following conditions:\n\n' +\
-               'The above copyright notice and this permission notice shall be included in all\n' +\
-               'copies or substantial portions of the Software.\n\n' +\
-               'THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n' +\
-               'IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n' +\
-               'FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\n' +\
-               'AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n' +\
-               'LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\n' +\
-               'OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\n' +\
-               'SOFTWARE.'
+# LICENSE_TEXT = lambda a, p:f'Current Application Version: Ultimate Vocal Remover {a}\n' +\
+#                f'Current Patch Version: {p}\n\n' +\
+#                'Copyright (c) 2022 Ultimate Vocal Remover\n\n' +\
+#                'UVR is free and open-source, but MIT licensed. Please credit us if you use our\n' +\
+#                f'models or code for projects unrelated to UVR.\n\n{LICENSE_OS_SPECIFIC_TEXT}' +\
+#                'This bundle contains the UVR interface, Python, PyTorch, and other\n' +\
+#                'dependencies needed to run the application effectively.\n\n' +\
+#                'Website Links: This application, System or Service(s) may contain links to\n' +\
+#                'other websites and downloads, and they are solely provided to you as an\n' +\
+#                'additional convenience. You understand and acknowledge that by clicking\n' +\
+#                'or activating such links you are accessing a site or service outside of\n' +\
+#                'this application, and that we do not screen, review, approve, or otherwise\n' +\
+#                'endorse any content or information contained in these linked websites.\n' +\
+#                'You acknowledge and agree that we, our affiliates and partners are not\n' +\
+#                'responsible for the contents of any of these linked websites, including\n' +\
+#                'the accuracy or availability of information provided by the linked websites,\n' +\
+#                'and we make no representations or warranties regarding your use of\n' +\
+#                'the linked websites.\n\n' +\
+#                'This application is MIT Licensed\n\n' +\
+#                'Permission is hereby granted, free of charge, to any person obtaining a copy\n' +\
+#                'of this software and associated documentation files (the "Software"), to deal\n' +\
+#                'in the Software without restriction, including without limitation the rights\n' +\
+#                'to use, copy, modify, merge, publish, distribute, sublicense, and/or sell\n' +\
+#                'copies of the Software, and to permit persons to whom the Software is\n' +\
+#                'furnished to do so, subject to the following conditions:\n\n' +\
+#                'The above copyright notice and this permission notice shall be included in all\n' +\
+#                'copies or substantial portions of the Software.\n\n' +\
+#                'THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n' +\
+#                'IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n' +\
+#                'FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\n' +\
+#                'AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n' +\
+#                'LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\n' +\
+#                'OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\n' +\
+#                'SOFTWARE.'
 
-CHANGE_LOG_HEADER = lambda patch:f"Patch Version:\n\n{patch}"
+# CHANGE_LOG_HEADER = lambda patch:f"Patch Version:\n\n{patch}"
 
 #DND CONSTS
 

@@ -1,0 +1,489 @@
+{
+  "Common": {
+    "Title": "终极人声清除器 | Ultimate Vocal Remover",
+    "Language": "简体中文",
+    "CloseWindow": "关闭窗口",
+    "ExitWindow": "退出窗口",
+    "BACK_TO_MAIN_MENU": "返回主菜单",
+    "file": "文件",
+    "files": "文件",
+    "secondaryModel": "次要模型",
+    "Save": "保存",
+    "Confirm": "确认",
+    "Cancel": "取消",
+    "SaveCurrentSettings": "保存当前设置",
+    "Yes": "是",
+    "No": "否",
+    "SelectModel": "选择模型",
+    "PrimaryStem": "主分轨"
+  },
+  "Settings": {
+    "Guide": {
+      "CommonMenu": "通用设置",
+      "Language": "语言",
+      "AdditionTitle": "其他菜单和信息",
+      "EnableHints": "启用帮助提示",
+      "OpenAppDirectory": "打开应用程序目录",
+      "ResetAll": "重置所有设置",
+      "Restart": "重启程序",
+      "ApplicationUpdates": "应用更新",
+      "ENSEMBLE_OPTION": "集成定制选项",
+      "MDX_OPTION": "MDX-Net高级选项",
+      "DEMUCS_OPTION": "Demucs高级选项",
+      "VR_OPTION": "VR高级选项",
+      "HELP_OPTION": "开源信息指南",
+      "ERROR_OPTION": "打开错误日志",
+      "MODEL_MISSING_CHECK": "模型缺失"
+    }
+  },
+  "mainUI": {
+    "SAMPLE_MODE_CHECKBOX": "小样模式({}秒)",
+    "SelectInput": "选择输入文件",
+    "SelectOutput": "选择输出文件",
+    "CHOOSE_PROC_METHOD_MAIN_LABEL": "选择处理模式",
+    "SELECT_SAVED_SETTINGS_MAIN_LABEL": "选择已保存的设置",
+    "CHOOSE_MDX_MODEL_MAIN_LABEL": "选择MDX-NET模型",
+    "BATCHES_MDX_MAIN_LABEL": "批大小",
+    "VOL_COMP_MDX_MAIN_LABEL": "音量补偿",
+    "SELECT_VR_MODEL_MAIN_LABEL": "选择VR模型",
+    "AGGRESSION_SETTING_MAIN_LABEL": "侵略性设置",
+    "WINDOW_SIZE_MAIN_LABEL": "窗口大小",
+    "CHOOSE_DEMUCS_MODEL_MAIN_LABEL": "选择DEMUCS模型",
+    "CHOOSE_DEMUCS_STEMS_MAIN_LABEL": "选择声部",
+    "CHOOSE_SEGMENT_MAIN_LABEL": "分段",
+    "ENSEMBLE_OPTIONS_MAIN_LABEL": "集成选项",
+    "CHOOSE_MAIN_PAIR_MAIN_LABEL": "主声部对",
+    "CHOOSE_ENSEMBLE_ALGORITHM_MAIN_LABEL": "选择集成算法",
+    "AVAILABLE_MODELS_MAIN_LABEL": "可用模型",
+    "CHOOSE_AUDIO_TOOLS_MAIN_LABEL": "选择音频工具",
+    "CHOOSE_MANUAL_ALGORITHM_MAIN_LABEL": "选择算法",
+    "CHOOSE_RATE_MAIN_LABEL": "采样率",
+    "CHOOSE_SEMITONES_MAIN_LABEL": "半音",
+    "GPU_CONVERSION_MAIN_LABEL": "GPU转换",
+    "START_PROCESSING": "开始处理",
+    "WAIT_PROCESSING": "请稍候...",
+    "STOP_PROCESSING": "正在停止进程，请稍候...",
+    "SELECT_SAVED_SET": "选择已保存的设置",
+    "RESET_TO_DEFAULT": "重置为默认设置",
+    "SAVE_ENSEMBLE": "保存集成选项",
+    "CLEAR_ENSEMBLE": "清除选项",
+    "CHOOSE_ENSEMBLE_OPTION": "选择集成选项",
+    "SelectFolder": "选择文件夹",
+    "SelectMusicFiles": "选择音乐文件",
+    "SELECT_SAVED_ENSEMBLE": "选择已保存的集成选项",
+    "SELECT_SAVED_SETTING": "选择已保存的设置"
+  },
+  "Menu": {
+    "help": {
+      "ReturnToSettings": "返回设置窗口",
+      "Credits": "贡献",
+      "Resources": "资料",
+      "License": "应用许可和版本信息",
+      "AppChangeLog": "应用程序变更日志",
+      "CoreDev": "核心开发人员",
+      "UVRLicenseInfo": "UVR许可信息",
+      "ChangeLog": "UVR变更日志",
+      "InformationGuide": "信息向导",
+      "SpecialThanks": "特别感谢",
+      "message": [
+        "开发了原始的VR Architecture AI代码。",
+        "开发了原始的MDX-Net AI代码。",
+        "是Facebook Demucs音乐源分离的核心开发者。",
+        "设计了官方UVR的标志、图标、横幅和启动画面。",
+        "你在项目开始阶段的贡献对UVR的成功至关重要。感谢你！",
+        "音频分离和CC卡拉OK及其朋友们的Discord社区",
+        "感谢你的支持！",
+        "你可以通过我们的官方GitHub找到更新、报告问题和给我们打个招呼。",
+        "许多提供的模型也可以在X-Minus上找到。X-Minus使没有计算资源运行GUI或本地模型的用户受益。",
+        "我们的一些模型也在MVSep上。点击上面的链接，查看一些由UVR用户记录的最佳设置和模型组合的列表。",
+        "UVR依赖FFmpeg处理非wav音频文件。如果你缺少FFmpeg，请通过提供的链接查看安装指南。",
+        "UVR使用Rubber Band库进行音频拉伸和音高变换工具。你可以通过提供的链接获取更多信息。",
+        "如果你希望支持并捐赠给这个项目，请点击上面的链接成为Patreon会员！"
+      ]
+    },
+    "Update": {
+      "LoadingVersion": "正在加载版本信息...",
+      "CheckUpdates": "检查更新",
+      "DownloadListRefreshed": "下载列表已刷新!",
+      "doRollBack": "点击这里回滚",
+      "doUpdate": "点击这里更新",
+      "RollBack": "回滚: {}",
+      "UpdateFound": "发现新版本",
+      "NewUpdateFound": "\n\n发现新的更新： {}\n\n点击 \"设置 \"菜单中的更新按钮下载并安装！",
+      "VersionStatus": "版本状态: {}",
+      "Refresh": "刷新",
+      "VIPModelsAdded": "VIP模型已添加!",
+      "IncorrectCode": "错误代码",
+      "CodeIncorrect": "代码错误",
+      "UVRVersionCurrent": "UVR已是最新版本",
+      "continue": "您确定要继续吗？\n\n应用程序将会重新启动。",
+      "ConfirmUpdate": "更新确认"
+    },
+    "DownloadCenter": {
+      "DOWNLOAD_FAILED": "下载失败",
+      "DOWNLOAD_STOPPED": "下载已停止",
+      "DOWNLOAD_COMPLETE": "下载完成",
+      "DOWNLOAD_UPDATE_COMPLETE": "更新下载完成",
+      "NO_CONNECTION": "无网络连接",
+      "VIP_SELECTION": "VIP:",
+      "NO_NEW_MODELS": "所有可用模型已下载",
+      "NO_MODEL": "未选中模型",
+      "CHOOSE_MODEL": "选择模型",
+      "SINGLE_DOWNLOAD": "下载第1/1项...",
+      "DOWNLOADING_ITEM_PROGRESS": "下载第{}/{}项...",
+      "DOWNLOADING_ITEM": "下载项目",
+      "FILE_EXISTS": "文件已存在！",
+      "DOWNLOADING_UPDATE": "下载更新...",
+      "DOWNLOAD_MORE": "下载更多模型",
+      "DownloadLinks": "下载链接",
+      "ManualDownloads": "手动下载",
+      "OpenLinkModel": "打开{}模型链接",
+      "SelectedModelPlacementPath": "选定模型的存放路径",
+      "OpenModelDirectory": "打开模型目录"
+    },
+    "menu_settings": {
+      "settingsGuide": "设置向导",
+      "additionalSettings": "附加设置",
+      "downloadCenter": "下载中心",
+      "preProcessModel": "预处理模型",
+      "ChooseOption": "选择选项",
+      "AudioFormatSettings": "音频格式设置",
+      "WavType": "Wav 格式",
+      "Mp3Bitrate": "Mp3 比特率",
+      "GeneralProcessSettings": "一般处理设置",
+      "SettingsTestMode": "设置测试模式",
+      "ModelTestMode": "模型测试模式",
+      "GenerateModelFolders": "生成模型文件夹",
+      "AcceptAnyInput": "接受任何输入",
+      "NotificationChimes": "通知提示音",
+      "NormalizeOutput": "标准化输出",
+      "ModelSampleModeSettings": "模型采样模式设置",
+      "SampleClipDuration": "采样片段时长",
+      "DeleteUserSavedSetting": "删除用户保存的设置",
+      "ApplicationDownloadCenter": "应用程序下载中心",
+      "SelectDownload": "选择下载",
+      "StopDownload": "停止下载",
+      "RefreshList": "刷新列表",
+      "TryManualDownload": "尝试手动下载"
+    },
+    "menu_view_inputs": {
+      "REMOVED_FILES": "音频输入验证报告：\n\n已删除的文件：\n\n{}\n\n错误详情：\n\n{}",
+      "selectedInputs": "已选择的输入",
+      "input": "输入",
+      "verifyInputs": "验证输入",
+      "audioInputTotal": "输入音频总数: {}",
+      "inputRemoved": "{} 个输入已移除。",
+      "cannotRemoveInputs": "在进行活动进程时无法移除输入。",
+      "noDirectory": "未选择导出目录。",
+      "brokenOrIncompatible": "已移除 {} 个损坏或不兼容的文件。请查看错误日志获取详细信息。",
+      "noErrorsFound": "未发现错误！",
+      "noFilesSelected": "未选中文件",
+      "noFilesDetected": "未检测到文件",
+      "stopProgress": "停止进程",
+      "processStopped": "进程已停止",
+      "cannotVerifyInputs": "在进行活动进程时无法验证输入。",
+      "removeSelected": "仅移除所选项目",
+      "keepSelected": "仅保留所选项目",
+      "clearAll": "清除所有输入",
+      "verifyAndCreateSamples": "验证并创建所选输入的样本",
+      "preferredDoubleClickAction": "首选双击操作",
+      "enableOpenDirectory": "启用：打开音频文件目录",
+      "enableOpenFile": "启用：打开音频文件",
+      "selectInput_Linux": "选择输入",
+      "widenBox": "宽窗口",
+      "closeWindow": "关闭窗口",
+      "VERIFY_BEGIN": "正在验证 ",
+      "SAMPLE_BEGIN": "正在创建小样"
+    },
+    "pop_up_save_current_settings": {
+      "InputNotes": "名称要求",
+      "NameSettings": "命名设置",
+      "INVALID_ENTRY": "无效输入，请重试",
+      "ENSEMBLE_INPUT_RULE": "1. 仅允许使用字母、数字、空格和连字符(-)。\n2. 输入开始或结束时不得使用连字符(-)或空格。"
+    },
+    "menu_advanced_ensemble_options": {
+      "AdvancedEnsembleOptions": "高级集成选项",
+      "AdvancedOptionMenu": "高级选项菜单",
+      "RemoveSavedEnsemble": "移除已保存的集成选项",
+      "SaveAllOutputs": "保存所有输出",
+      "AppendEnsembleName": "附加集成名称",
+      "OpenDemucsModelFolder": "打开Demucs模型文件夹",
+      "AdvancedDemucsOptions": "Demucs高级选项"
+    },
+    "menu_advanced_vr_options": {
+      "AdvancedVROptions": "VR高级选项",
+      "WindowSize": "窗口大小",
+      "AggressionSetting": "侵略性设置",
+      "BatchSize": "批处理大小",
+      "PostProcessThreshold": "后处理阈值",
+      "EnableTTA": "启用TTA",
+      "PostProcess": "后处理",
+      "HighEndProcess": "高端处理",
+      "ClearAutoSetCache": "清除自动设置缓存",
+      "OpenVRModelsFolder": "打开VR模型文件夹"
+    },
+    "menu_advanced_demucs_options": {
+      "Segments": "分音轨",
+      "Shifts": "偏移",
+      "Overlap": "重叠",
+      "Chunks": "分块",
+      "ChunkMargin": "分块边距",
+      "EnableChunks": "启用分块",
+      "SplitMode": "分割模式",
+      "CombineStems": "合并音轨",
+      "SpectralInversion": "频谱反转",
+      "MixerMode": "混音模式",
+      "OpenDemucsModelFolder": "打开Demucs模型文件夹",
+      "SaveInstrumentalMixture": "保存伴奏混音",
+      "ActivatePreProcessModel": "激活预处理模型"
+    },
+    "menu_advanced_mdx_options": {
+      "DenoiseOutput": "去噪输出",
+      "OpenMDXNetModelsFolder": "打开MDX-Net模型文件夹"
+    },
+    "menu_error_log": {
+      "ErrorConsole": "错误控制台",
+      "CopyAllText": "复制所有文本",
+      "ReportIssue": "报告问题",
+      "UVRErrorLog": "UVR错误日志"
+    },
+    "menu_secondary_model": {
+      "ActivateSecondaryModel": "激活次要模型"
+    },
+    "pop_up_user_code_input": {
+      "UserDownloadCodes": "用户下载代码",
+      "DownloadCode": "下载代码",
+      "SupportUVR": "支持UVR",
+      "Support": "请访问以下链接获取代码。\n在那里您可以捐赠、认捐或直接获得代码！\n (获得VIP代码不需要捐款）",
+      "UVRPatreonLink": "UVR Patreon 链接",
+      "SupportLink": "UVR \"Buy Me a Coffee\" 链接",
+      "InputCode": "输入代码"
+    },
+    "pop_up_mdx_model": {
+      "SpecifyMDXNetModelParameters": "指定MDX-Net模型参数",
+      "PrimaryStem": "主分轨",
+      "LeaveThisSetting": "(如果您不确定，请保持该设置不变。)",
+      "VolumeCompensation": "音量补偿",
+      "SpecifyParameters": "指定参数"
+    },
+    "pop_up_vr_param": {
+      "NoneSelected": "未选择",
+      "SpecifyVRModelParameters": "指定VR模型参数",
+      "SelectModelParam": "选择模型参数",
+      "ChooseModelParam": "选择模型参数"
+    },
+    "pop_up_save_ensemble": {
+      "InputNotes": "输入要求",
+      "NotEnoughModels": "没有足够的模型",
+      "MoreThan2": "您必须选择2个或2个以上的模型来保存一个组合。",
+      "OK": "好的",
+      "SaveCurrentEnsemble": "保存当前组合",
+      "EnsembleName": "组合名称"
+    },
+    "process_tool": {
+      "time_elapsed": "已用时间: {}",
+      "NotEnoughFiles": "没有足够的文件处理。\n",
+      "MustExactly2Inputs": "您必须精确选择 2 个输入文件！\n",
+      "processBaseText": "文件 {}/{}",
+      "ProcessProgress": "处理进度: {}%",
+      "ProcessStoppedByUser": "\n\n用户终止进程",
+      "MissingOrCorrupted": "{} \"{}\" 丢失或损坏。",
+      "ProcessStarting": "进程开始...",
+      "ProcessComplete": "\n进程完成\n{}",
+      "EnsembleMode": "组合模式 - {} - 模型 {}/{}\n\n"
+    }
+  },
+  "Message": {
+    "UNRECOGNIZED_MODEL": [
+      "检测到未识别的模型",
+      "\"{}\"是一个未识别的模型。\n\n您是否希望在继续之前选择正确的参数？"
+    ],
+    "InvalidFolder": [
+      "无效的导出目录",
+      "您选择的路径无效!"
+    ],
+    "RESTART_TITLE": [
+      "重启确认",
+      "这将重新启动应用程序并停止任何正在运行的进程。您当前的设置将被保存。\n\n您确定您要继续吗？"
+    ],
+    "RESTART_SET_LANGUAGE_TITLE": [
+      "需要重启程序",
+      "重启程序以更新语言。\n您确定您要继续吗？"
+    ],
+    "INVALID_INPUT": [
+      "无效输入",
+      "输入内容无效。\n\n请验证该输入内容存在或有效，并再次尝试。"
+    ],
+    "INVALID_EXPORT": [
+      "无效的导出目录",
+      "您选择了一个无效的导出目录。\n\n请确保所选的目录仍然存在。"
+    ],
+    "INVALID_ENSEMBLE": [
+      "没有足够的模型",
+      "您必须选择至少2个模型才能进行集成处理。"
+    ],
+    "INVALID_MODEL": [
+      "未选择模型",
+      "您需要选择一个模型才能继续。"
+    ],
+    "MISSING_MODEL": [
+      "模型缺失",
+      "所选模型缺失或无效。"
+    ],
+    "ERROR_OCCURED": [
+      "发生错误",
+      "\n\n您想打开错误日志了解更多细节吗？\n"
+    ],
+    "space_details": "检测到的总空间: {} GB\n检测到的已用空间: {} GB\n检测到的可用空间: {} GB",
+    "STORAGE_ERROR": [
+      "存储空间不足",
+      "主驱动器上的存储空间不足，无法继续操作。为了使该应用程序正常运行，您的主驱动器必须至少有3GB的可用存储空间。\n\n请确保您的主驱动器至少有3GB的存储空间，然后重试。\n\n"
+    ],
+    "STORAGE_WARNING": [
+      "可用存储空间低",
+      "您的主驱动器的存储空间不足。为了使该应用程序正常运行，您的主驱动器必须至少有3GB的可用存储空间。\n\n"
+    ],
+    "CONFIRM_WARNING": "\n您确定要继续吗？",
+    "PROCESS_FAILED": "进程失败，请查看错误日志\n",
+    "EXIT_PROCESS_ERROR": [
+      "活动进程",
+      "请在退出之前停止活动进程或等待其完成。"
+    ],
+    "EXIT_HALTED_PROCESS_ERROR": [
+      "停止进程",
+      "请在退出之前等待应用程序完成停止进程。"
+    ],
+    "EXIT_DOWNLOAD_ERROR": [
+      "正在下载",
+      "请在退出之前停止下载或等待其完成。"
+    ],
+    "SET_TO_DEFAULT_PROCESS_ERROR": [
+      "活动进程",
+      "在活动进程中无法重置所有应用程序设置。"
+    ],
+    "SET_TO_ANY_PROCESS_ERROR": [
+      "活动进程",
+      "在活动进程中无法重置应用程序设置。"
+    ],
+    "RESET_ALL_TO_DEFAULT_WARNING": [
+      "重置设置确认",
+      "所有应用程序设置将恢复为出厂默认设置。\n\n您确定要继续吗？"
+    ],
+    "ERROR_WHILE_LOADING": "加载以下文件时出错: \n\n\"{}\"\n\n原始错误详情:\n\n{}",
+    "AUDIO_VERIFICATION_CHECK": "++++++++++++++++++++++++++++++++++++++++++++++++++++\n\n已删除损坏文件：\n\n{}\n\n错误详细信息：\n\n{}\n++++++++++++++++++++++++++++++++++++++++++++++++++++",
+    "INVALID_ONNX_MODEL_ERROR": [
+      "无效模型",
+      "所选文件不是有效的MDX-Net模型。有关更多信息，请参阅错误日志。"
+    ],
+    "LOADING_MODEL": "正在加载{}模型...",
+    "INFERENCE_STEP_1": "正在运行推理...",
+    "INFERENCE_STEP_1_SEC": "正在运行推理（辅助模型）...",
+    "INFERENCE_STEP_1_4_STEM": "正在运行推理（针对{}的辅助模型）...",
+    "INFERENCE_STEP_1_PRE": "正在运行推理（预处理模型）...",
+    "INFERENCE_STEP_2_PRE": "正在加载预处理模型（{}: {}）...",
+    "INFERENCE_STEP_2_SEC": "正在加载辅助模型（{}: {}）...",
+    "INFERENCE_STEP_2_SEC_CACHED_MODEL": "辅助模型（{}: {}）缓存已加载。\n",
+    "INFERENCE_STEP_2_PRE_CACHED_MODEL": "预处理模型（{}: {}）缓存已加载。\n",
+    "INFERENCE_STEP_2_SEC_CACHED": "正在加载缓存的辅助模型源代码... 完成！\n",
+    "INFERENCE_STEP_2_PRIMARY_CACHED": "模型缓存已加载。\n",
+    "INFERENCE_STEP_2": "推理完成。",
+    "SAVING_STEM": "正在保存{}分轨...",
+    "SAVING_ALL_STEMS": "正在保存所有分轨...",
+    "ENSEMBLING_OUTPUTS": "正在集成输出...",
+    "DONE": " 完成！\n",
+    "ENSEMBLES_SAVED": "已保存集成的输出！\n\n"
+  },
+  "Tip": {
+    "CopyHelpHintText": "复制帮助提示文本",
+    "INTERNAL_MODEL_ATT": "内部模型属性。\n\n*** 如果您不确定，请不要更改此设置！***",
+    "MDX_DIM_T_SET_HELP": "内部模型属性。\n\n*** 如果您不确定，请不要更改此设置！***",
+    "MDX_DIM_F_SET_HELP": "内部模型属性。\n\n*** 如果您不确定，请不要更改此设置！***",
+    "STOP_HELP": "停止当前正在运行的进程。\n会弹出一个窗口询问用户确认操作。",
+    "SETTINGS_HELP": "打开主要设置指南。此窗口包括“下载中心”。",
+    "SAVE_CURRENT_SETTINGS_HELP": "允许用户打开任何保存的设置或保存当前应用程序设置。",
+    "CHUNKS_HELP": "对于MDX-Net，所有值使用相同的资源量。不再推荐使用分块（chunks）。\n\n• 此选项现在仅用于输出质量。\n• 某些音轨可能根据值而有所改善。\n• 某些音轨可能根据值而有所恶化。\n• 较大的分块大小需要较少的处理时间。\n• 较小的分块大小需要更多的处理时间。",
+    "CHUNKS_DEMUCS_HELP": "此选项允许用户减少（或增加）RAM或V-RAM的使用。\n\n• 较小的分块大小使用较少的RAM或V-RAM，但也可能增加处理时间。\n• 较大的分块大小使用更多的RAM或V-RAM，但也可能减少处理时间。\n• 选择“自动”会根据系统的RAM或V-RAM数量计算适当的分块大小。\n• 选择“全局”将将音轨作为一个完整的分块处理（不推荐）。\n• 默认选择为“自动”。",
+    "MARGIN_HELP": "选择用于切割分块的频率边界。\n\n• 推荐的边界大小为44100。\n• 其他值可能会产生不可预测的结果。",
+    "AGGRESSION_SETTING_HELP": "此选项允许您设置主要音频分离的强度。\n\n• 范围为0-100。\n• 较高的值执行更深入的分离。\n• 对于乐器和人声模型，默认值为10。\n• 值大于10可能导致非人声模型的乐器音色变得混沌。",
+    "WINDOW_SIZE_HELP": "窗口大小越小，转换效果越好。\n但是，较小的窗口意味着较长的转换时间和更重的资源使用。\n\n可选窗口大小的详细情况：\n• 1024 - 低转换质量，最短转换时间，低资源使用。\n• 512 - 平均转换质量，平均转换时间，正常资源使用。\n• 320 - 更好的转换质量。",
+    "DEMUCS_STEMS_HELP": "在此处，您可以选择使用所选模型提取哪个音轨。\n\n音轨选择：\n\n• 所有音轨 - 保存模型能够提取的所有音轨。\n• 人声 - 仅提取人声音轨。\n• 其他 - 仅提取其他音轨。\n• 贝斯 - 仅提取贝斯音轨。\n• 鼓 - 仅提取鼓音轨。",
+    "SEGMENT_HELP": "此选项允许用户减少（或增加）RAM或V-RAM的使用。\n\n• 较小的片段大小使用较少的RAM或V-RAM，但也可能增加处理时间。\n• 较大的片段大小使用更多的RAM或V-RAM，但也可能减少处理时间。\n• 选择“默认”使用推荐的片段大小。\n• 不建议在“启用分块”时使用片段。",
+    "ENSEMBLE_MAIN_STEM_HELP": "允许用户选择希望进行组合的音轨类型。\n\n选项：\n\n• 人声/乐器 - 主要音轨为人声，次要音轨为伴奏\n• 其它/无其它 - 主要音轨为其他，次要音轨为没有“其他”音轨的混音\n• 贝斯/无贝斯 - 主要音轨为贝斯，次要音轨为没有“贝斯”的混音\n• 鼓/无鼓 - 主要音轨为鼓，次要音轨为没有“鼓”的混音\n• 四轨混音 - 此选项将收集所有4音轨Demucs模型并将所有组合输出\n",
+    "ENSEMBLE_TYPE_HELP": "允许用户选择要用于生成最终输出的组合算法。\n\n示例和其他说明：\n\n• 最大/最小规格 - 如果选择此选项，主要音轨输出将通过“最大规格”算法处理，次要音轨将通过“最小规格”算法处理。\n• 选择“4音轨组合”选项时，只会显示单个算法。\n\n算法详情：\n\n• 最大规格 - 此算法结合最终结果并从中生成最高可能的输出。\n例如，如果该算法正在处理人声音轨，你将获得最完整的结果，使合成的人声分轨听起来更清晰。然而，这可能会产生更多不必要的混音。\n• 最小规格 - 此算法结合结果并从中生成最低可能的输出。\n例如，如果此算法处理伴奏音轨，则会获得最干净的结果，消除更多不需要的混音。但是，结果可能听起来比较“混沌”且缺乏完整的声音。\n• 平均 - 此算法仅简单地结合结果并将它们全部平均在一起。 \n",
+    "ENSEMBLE_LISTBOX_HELP": "列出所选主音轨可用的所有模型。",
+    "IS_GPU_CONVERSION_HELP": "勾选此项，应用程序将尝试使用您的GPU（如果有的话）。\n如果您没有GPU但勾选了此项，则应用程序将默认使用CPU。\n\n注意：使用CPU进行转换比通过GPU进行处理速度要慢得多。",
+    "SAVE_STEM_ONLY_HELP": "仅保存所选音轨。",
+    "IS_NORMALIZATION_HELP": "将输出标准化以防止剪切（clipping）。",
+    "IS_TTA_HELP": "此选项执行测试时间增强以提高分离质量。\n\n注意：选择此选项将增加完成转换所需的时间。",
+    "IS_POST_PROCESS_HELP": "此选项可以潜在地识别音频中残留的伴奏噪音，从而改善某些歌曲的分离。\n\n注意：选择此选项可能会对转换过程产生负面影响，具体取决于音轨。因此，仅建议作为最后的选择。",
+    "IS_HIGH_END_PROCESS_HELP": "应用程序将镜像输出的缺失频率范围。",
+    "SHIFTS_HELP": "使用输入的随机偏移进行多次预测并对其进行平均。\n\n• 偏移次数越多，预测所需的时间就越长。 \n- 除非您有GPU，否则不建议使用。",
+    "OVERLAP_HELP": "此选项控制预测窗口之间的重叠量（对于Demucs，一个窗口为10秒）。",
+    "IS_CHUNK_DEMUCS_HELP": " •启用“分块”。\n• 不推荐在启用“分割模式”或使用Demucs v4模型时启用此选项。",
+    "IS_CHUNK_MDX_NET_HELP": "• 启用“分块”。\n• 在MDX-Net中使用该选项不再影响RAM的使用。\n• 启用该功能将影响输出质量，好坏取决于设置值。",
+    "IS_SPLIT_MODE_HELP": "• 启用”分音轨“. \n• 我们建议您不要在“启用分块”时启用该选项。\n• 仅建议在拥有强大个人电脑或者使用“分块”模式时取消选择此选项。",
+    "IS_DEMUCS_COMBINE_STEMS_HELP": "应用程序将通过组合剩余的音轨而不是将主要音轨与混音进行反转来创建次要音轨。",
+    "COMPENSATE_HELP": "通过音量补偿来改善主要音轨的音频，以获得更好的次要音轨。",
+    "IS_DENOISE_HELP": "• 此选项可以去除MDX-Net模型生成的大部分噪音。\n• 启用此选项会使转换时间几乎加倍。",
+    "CLEAR_CACHE_HELP": "清除先前未识别模型的用户选择的模型设置。",
+    "IS_SAVE_ALL_OUTPUTS_ENSEMBLE_HELP": "启用此选项将保留组合生成的所有单独输出。",
+    "IS_APPEND_ENSEMBLE_NAME_HELP": "当启用此选项时，应用程序将在最终输出中附加组合名称。",
+    "DONATE_HELP": "将用户带到一个外部网站，以向该项目捐款！",
+    "IS_INVERT_SPEC_HELP": "• 此选项可能会产生更好的次要音轨。\n• 使用谱图而不是波形将主要音轨与混音进行反转。\n• 此反转方法略慢。",
+    "IS_MIXER_MODE_HELP": "• 此选项可能会改善4音轨模型的分离效果。\n• 可能会产生更多噪音。\n• 此选项可能会减慢分离时间。",
+    "IS_TESTING_AUDIO_HELP": "向输出文件添加一个唯一的10位数，以便用户可以将具有不同设置的结果进行比较。",
+    "IS_MODEL_TESTING_AUDIO_HELP": "将模型名称附加到输出文件，以便用户可以将具有不同设置的结果进行比较。",
+    "IS_ACCEPT_ANY_INPUT_HELP": "启用此选项后，应用程序将接受任何输入，即使没有音频格式扩展名。\n\n这仅用于实验目的，不建议启用此选项。",
+    "IS_TASK_COMPLETE_HELP": "启用后，完成或失败时会听到提示音。",
+    "IS_CREATE_MODEL_FOLDER_HELP": "在每次转换后，将在导出目录中生成两个新目录以用于输出。\n\n• 第一个目录 - 命名为模型名称。\n• 第二个目录 - 命名为音轨名称。\n\n• 示例：\n\n─ 导出目录\n  └── 第一个目录\n       └── 第二个目录\n           └── 输出文件",
+    "DELETE_YOUR_SETTINGS_HELP": "此菜单包含保存的设置。将要求您确认是否删除所选设置。",
+    "SET_STEM_NAME_HELP": "选择所选模型的主要音轨。",
+    "MDX_N_FFT_SCALE_SET_HELP": "设置模型训练时使用的N_FFT大小。",
+    "POPUP_COMPENSATE_HELP": "为所选模型选择适当的音量补偿。\n\n注意：{}",
+    "VR_MODEL_PARAM_HELP": "选择运行所选模型所需的参数。",
+    "CHOSEN_ENSEMBLE_HELP": "选择保存的组合或保存当前的组合。\n\n默认选择：\n\n• 保存当前组合。\n• 清除所有当前模型选择。",
+    "CHOSEN_PROCESS_METHOD_HELP": "在此处选择不同的神经网络和算法来处理音轨。\n\n有五个选项：\n\n• VR架构 - 这些模型使用幅度谱图进行源分离。\n• MDX-Net - 这些模型使用混合谱图/波形进行源分离。\n• Demucs v3 - 这些模型使用混合谱图/波形进行源分离。\n• 组合模式 - 在这里，您可以从多个模型和网络中获得最佳结果。\n• 音频工具 - 这些是为了增加便利性而添加的其他工具。",
+    "INPUT_FOLDER_ENTRY_HELP": "选择输入：\n\n在这里选择您希望处理的音频文件。",
+    "INPUT_FOLDER_ENTRY_HELP_2": "输入选项菜单：\n\n点击这里访问输入选项菜单。",
+    "OUTPUT_FOLDER_ENTRY_HELP": "选择输出：\n\n在这里选择您要保存已处理文件的目录。",
+    "INPUT_FOLDER_BUTTON_HELP": "打开输入文件夹按钮：\n\n打开包含所选输入音频文件的目录。",
+    "OUTPUT_FOLDER_BUTTON_HELP": "打开输出文件夹按钮：\n\n打开选择的输出文件夹。",
+    "CHOOSE_MODEL_HELP": "每种处理方法都有其自己的选项和模型。\n\n在这里选择与所选处理方法相关联的模型。",
+    "FORMAT_SETTING_HELP": "保存输出为",
+    "SECONDARY_MODEL_ACTIVATE_HELP": "启用后，应用程序将使用上面选择的模型进行附加推理。",
+    "SECONDARY_MODEL_HELP": "选择与要在当前处理方法下运行的音频声部相关的次要模型。",
+    "SECONDARY_MODEL_SCALE_HELP": "该比例确定最终音频输出在主模型和次要模型之间的平均值。\n\n例如：\n\n• 10% - 主模型结果的10%将用于最终结果。\n• 50% - 主模型和次要模型的结果将平均。\n• 90% - 主模型结果的90%将用于最终结果。",
+    "PRE_PROC_MODEL_ACTIVATE_HELP": "应用程序将使用上面选择的模型进行推理，仅保留生成的器乐声部。\n然后，从生成的器乐声部中提取所有非人声声部。\n\n备注:\n\n• 此选项可以显著减少非人声声部中的人声泄漏。\n• 仅适用于Demucs。\n• 仅与非人声和非器乐声部输出兼容。\n• 这将增加总体处理时间。\n• 只有在上面可选择VR和MDX-Net Vocal或Instrumental模型。",
+    "AUDIO_TOOLS_HELP": "在这里，您可以选择不同的音频工具来处理音轨。\n\n• 手动集成 - 您必须选择2个或更多文件作为输入。允许用户通过与集成模式中使用的相同算法运行音轨。\n• 对齐输入 - 您必须选择2个输入作为输入。第二个输入将与第一个输入对齐。\n• 时间拉伸 - 用户可以加快或放慢所选输入的速度。\n• 变更音调 - 用户可以更改所选输入的音调。\n",
+    "PRE_PROC_MODEL_INST_MIX_HELP": "启用后，应用程序将生成第三个输出，其中不包含所选声部和人声。",
+    "MODEL_SAMPLE_MODE_HELP": "允许用户仅处理部分音轨以采样设置或模型，而无需运行完整的转换。\n\n注:\n\n• 括号中的数字是生成样本的当前秒数。\n• 您可以在\"附加设置\"菜单中选择要从音轨中提取的秒数。",
+    "POST_PROCESS_THREASHOLD_HELP": "允许用户控制后处理选项的强度。\n\n注:\n\n• 较高的数值可能会更好地去除杂音。然而，混音可能会增加。\n• 较低的数值限制了杂音的去除。",
+    "BATCH_SIZE_HELP": "指定一次要处理的批次数。\n\n备注:\n\n• 较高的值意味着更多的RAM使用，但处理速度会稍快。\n• 较低的值意味着更少的RAM使用，但处理时间更长。\n• 批量大小值不会影响输出质量。",
+    "CHANGE_LOG_HEADER": "补丁版本:\n\n{}",
+    "LICENSE_OS_SPECIFIC_TEXT": {
+      "Windows": "• 此应用程序适用于运行Windows 10或更高版本的用户。\n• 无法保证适用于运行Windows 7或更低版本的系统。\n• 无法保证适用于使用Intel Pentium和Celeron CPU的系统。\n\n",
+      "Linux": "• 此应用程序适用于运行Linux Ubuntu 18.04+的用户。\n• 无法保证适用于运行其他Linux平台的系统。\n• 无法保证适用于较旧或预算有限的系统。\n\n",
+      "Darwin": "• 此应用程序适用于运行macOS Catalina及更高版本的用户。\n• 无法保证适用于运行macOS Mojave或更低版本的系统。\n• 无法保证适用于较旧或预算有限的Mac系统。\n\n",
+      "Other": "\n\n"
+    },
+    "LICENSE_TEXT": "当前应用程序版本：Ultimate Vocal Remover {}\n当前补丁版本：{}\n\n版权所有 (c) 2022 Ultimate Vocal Remover\n\nUVR是免费和开源的，但受MIT许可证保护。\n如果您在与UVR无关的项目中使用了我们的模型或代码，请注明出处。\n\n{}此捆绑包包含了UVR界面、Python、PyTorch和其他运行应用程序所需的依赖项。\n\n网站链接：\n此应用程序、系统或服务可能包含指向其他网站和下载的链接，它们仅作为您的额外便利提供。\n\n您理解并确认，通过点击或激活此类链接，您正在访问此应用程序之外的站点或服务，\n并且我们不会筛选、审核、批准或以其他方式认可这些链接网站上的任何内容或信息。\n您承认并同意，我们、我们的关联公司和合作伙伴对于这些链接网站的内容，\n包括所链接网站上提供的信息的准确性或可用性，概不负责，\n并且我们对您使用这些链接网站的情况不提供任何陈述或保证。\n\n此应用程序受MIT许可证保护。\n\n特此授予免费许可，\n任何获得本软件及相关文档文件（以下简称“软件”）副本的人，可以无限制地处理本软件，\n包括但不限于使用、复制、修改、合并、出版、分发、再授权和/或销售本软件的副本，\n以及允许获得本软件的人员这样做，但须遵守以下条件：\n\n上述版权声明和本许可声明应包含在所有软件的副本或重要部分中。\n\n本软件按“原样”提供，不作任何明示或隐含的保证，包括但不限于适销性保证、特定用途适用性和非侵权性。作者或版权持有人在任何情况下均不对任何索赔、损害或其他责任负责，无论是因合同诉讼、侵权还是其他方式引起的、与本软件或本软件的使用或其他交易有关的或与之无关的索赔、损害或其他责任。"
+  },
+  "Labels": {
+    "SeeAllInputs": "查看所有输入",
+    "Copy": "复制",
+    "Paste": "粘贴",
+    "Delete": "删除",
+    "SelectSavedSettings": "选择已保存的设置",
+    "AdvancedSettings": "{}高级设置",
+    "AdditionalSettings": "附加设置",
+    "ErrorLog": "错误日志"
+  },
+  "Sorts": {
+    "Only": "仅{}",
+    "HelpHints": "{}帮助提示",
+    "help_hints_Enable": "启用",
+    "help_hints_Disable": "禁用",
+    "Seconds": "{} 秒",
+    "FileProcess": "文件 {} \"{}\"{}"
+  }
+}

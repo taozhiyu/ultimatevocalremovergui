@@ -1,4 +1,6 @@
 from __future__ import annotations
+
+import locale
 from typing import TYPE_CHECKING
 from demucs.apply import apply_model, demucs_segments
 from demucs.hdemucs import HDemucs
@@ -6,6 +8,7 @@ from demucs.model_v2 import auto_load_demucs_model_v2
 from demucs.pretrained import get_model as _gm
 from demucs.utils import apply_model_v1
 from demucs.utils import apply_model_v2
+from gui_data.Locales import Translator
 from lib_v5 import spec_utils
 from lib_v5.vr_network import nets
 from lib_v5.vr_network import nets_new
@@ -34,8 +37,8 @@ warnings.filterwarnings("ignore")
 cpu = torch.device('cpu')
 
 class SeperateAttributes:
-    def __init__(self, model_data: ModelData, process_data: dict, main_model_primary_stem_4_stem=None, main_process_method=None):
-        
+    def __init__(self, model_data: ModelData, process_data: dict, main_model_primary_stem_4_stem=None, main_process_method=None, lang=locale.getdefaultlocale()[0]):
+        self.translator = Translator(lang)
         self.list_all_models: list
         self.process_data = process_data
         self.progress_value = 0
@@ -172,22 +175,22 @@ class SeperateAttributes:
     def start_inference_console_write(self):
         
         if self.is_secondary_model and not self.is_pre_proc_model:
-            self.write_to_console(INFERENCE_STEP_2_SEC(self.process_method, self.model_basename))
+            self.write_to_console(self.translator.translate("Message.INFERENCE_STEP_2_SEC",self.process_method, self.model_basename))
         
         if self.is_pre_proc_model:
-            self.write_to_console(INFERENCE_STEP_2_PRE(self.process_method, self.model_basename))
+            self.write_to_console(self.translator.translate("Message.INFERENCE_STEP_2_PRE",self.process_method, self.model_basename))
         
     def running_inference_console_write(self, is_no_write=False):
         
-        self.write_to_console(DONE, base_text='') if not is_no_write else None
+        self.write_to_console(self.translator.translate("Message.DONE"), base_text='') if not is_no_write else None
         self.set_progress_bar(0.05) if not is_no_write else None
         
         if self.is_secondary_model and not self.is_pre_proc_model:
-            self.write_to_console(INFERENCE_STEP_1_SEC)
+            self.write_to_console(self.translator.translate("Message.INFERENCE_STEP_1_SEC"))
         elif self.is_pre_proc_model:
-            self.write_to_console(INFERENCE_STEP_1_PRE)
+            self.write_to_console(self.translator.translate("Message.INFERENCE_STEP_1_PRE"))
         else:
-            self.write_to_console(INFERENCE_STEP_1)
+            self.write_to_console(self.translator.translate("Message.INFERENCE_STEP_1"))
         
     def running_inference_progress_bar(self, length, is_match_mix=False):
         if not is_match_mix:
@@ -201,11 +204,11 @@ class SeperateAttributes:
     def load_cached_sources(self, is_4_stem_demucs=False):
         
         if self.is_secondary_model and not self.is_pre_proc_model:
-            self.write_to_console(INFERENCE_STEP_2_SEC_CACHED_MODOEL(self.process_method, self.model_basename))
+            self.write_to_console(self.translator.translate("Message.INFERENCE_STEP_2_SEC_CACHED_MODOEL",self.process_method, self.model_basename))
         elif self.is_pre_proc_model:
-            self.write_to_console(INFERENCE_STEP_2_PRE_CACHED_MODOEL(self.process_method, self.model_basename))
+            self.write_to_console(self.translator.translate("Message.INFERENCE_STEP_2_PRE_CACHED_MODOEL",self.process_method, self.model_basename))
         else:
-            self.write_to_console(INFERENCE_STEP_2_PRIMARY_CACHED)
+            self.write_to_console(self.translator.translate("Message.INFERENCE_STEP_2_PRIMARY_CACHED"))
 
         if not is_4_stem_demucs:
             primary_stem, secondary_stem = gather_sources(self.primary_stem, self.secondary_stem, self.primary_sources)
@@ -237,7 +240,7 @@ class SeperateAttributes:
             sf.write(stem_path, stem_source, samplerate, subtype=self.wav_type_set)
             save_format(stem_path, self.save_format, self.mp3_bit_set) if not self.is_ensemble_mode else None
             
-            self.write_to_console(DONE, base_text='')
+            self.write_to_console(self.translator.translate("Message.DONE"), base_text='')
             self.set_progress_bar(0.95)
 
     def run_mixer(self, mix, sources):
@@ -285,14 +288,14 @@ class SeperateMDX(SeperateAttributes):
             mdx_net_cut = True if self.primary_stem in MDX_NET_FREQ_CUT else False
             mix, raw_mix, samplerate = prepare_mix(self.audio_file, self.chunks, self.margin, mdx_net_cut=mdx_net_cut)
             source = self.demix_base(mix, is_ckpt=self.is_mdx_ckpt)[0]
-            self.write_to_console(DONE, base_text='')            
+            self.write_to_console(self.translator.translate("Message.DONE"), base_text='')
 
         if self.is_secondary_model_activated:
             if self.secondary_model:
                 self.secondary_source_primary, self.secondary_source_secondary = process_secondary_model(self.secondary_model, self.process_data, main_process_method=self.process_method)
         
         if not self.is_secondary_stem_only:
-            self.write_to_console(f'{SAVING_STEM[0]}{self.primary_stem}{SAVING_STEM[1]}') if not self.is_secondary_model else None
+            self.write_to_console(self.translator.translate("Message.SAVING_STEM",self.primary_stem)) if not self.is_secondary_model else None
             primary_stem_path = os.path.join(self.export_path, f'{self.audio_file_base}_({self.primary_stem}).wav')
             if not isinstance(self.primary_source, np.ndarray):
                 self.primary_source = spec_utils.normalize(source, self.is_normalization).T
@@ -300,7 +303,7 @@ class SeperateMDX(SeperateAttributes):
             self.write_audio(primary_stem_path, self.primary_source, samplerate, self.secondary_source_primary)
 
         if not self.is_primary_stem_only:
-            self.write_to_console(f'{SAVING_STEM[0]}{self.secondary_stem}{SAVING_STEM[1]}') if not self.is_secondary_model else None
+            self.write_to_console(self.translator.translate("Message.SAVING_STEM",self.secondary_stem)) if not self.is_secondary_model else None
             secondary_stem_path = os.path.join(self.export_path, f'{self.audio_file_base}_({self.secondary_stem}).wav')
             if not isinstance(self.secondary_source, np.ndarray):
                 raw_mix = self.demix_base(raw_mix, is_match_mix=True)[0] if mdx_net_cut else raw_mix
@@ -460,7 +463,7 @@ class SeperateDemucs(SeperateAttributes):
             if self.pre_proc_model:
                 if self.primary_stem not in [VOCAL_STEM, INST_STEM]:
                     is_no_write = True
-                    self.write_to_console(DONE, base_text='')
+                    self.write_to_console(self.translator.translate("Message.DONE"), base_text='')
                     mix_no_voc = process_secondary_model(self.pre_proc_model, self.process_data, is_pre_proc_model=True)
                     inst_mix, inst_raw_mix, inst_samplerate = prepare_mix(mix_no_voc[INST_STEM], self.chunks_demucs, self.margin_demucs)
                     self.process_iteration()
@@ -478,7 +481,7 @@ class SeperateDemucs(SeperateAttributes):
                 source = self.demix_demucs(mix)
                 source = self.run_mixer(raw_mix, source)
             
-            self.write_to_console(DONE, base_text='')
+            self.write_to_console(self.translator.translate("Message.DONE"), base_text='')
             
             del self.demucs
             torch.cuda.empty_cache()
@@ -519,7 +522,7 @@ class SeperateDemucs(SeperateAttributes):
                             stem_source_secondary = stem_source_secondary[stem_name]
                             
                 stem_source_secondary = None if stem_value >= 4 else stem_source_secondary
-                self.write_to_console(f'{SAVING_STEM[0]}{stem_name}{SAVING_STEM[1]}') if not self.is_secondary_model else None
+                self.write_to_console(self.translator.translate("Message.SAVING_STEM",stem_name)) if not self.is_secondary_model else None
                 stem_path = os.path.join(self.export_path, f'{self.audio_file_base}_({stem_name}).wav')
                 stem_source = spec_utils.normalize(source[stem_value], self.is_normalization).T
                 self.write_audio(stem_path, stem_source, samplerate, secondary_model_source=stem_source_secondary, model_scale=model_scale)
@@ -532,7 +535,7 @@ class SeperateDemucs(SeperateAttributes):
                     self.secondary_source_primary, self.secondary_source_secondary = process_secondary_model(self.secondary_model, self.process_data, main_process_method=self.process_method)
 
             if not self.is_secondary_stem_only:
-                self.write_to_console(f'{SAVING_STEM[0]}{self.primary_stem}{SAVING_STEM[1]}') if not self.is_secondary_model else None
+                self.write_to_console(self.translator.translate("Message.SAVING_STEM",self.primary_stem)) if not self.is_secondary_model else None
                 primary_stem_path = os.path.join(self.export_path, f'{self.audio_file_base}_({self.primary_stem}).wav')
                 if not isinstance(self.primary_source, np.ndarray):
                     self.primary_source = spec_utils.normalize(source[self.demucs_source_map[self.primary_stem]], self.is_normalization).T
@@ -542,7 +545,7 @@ class SeperateDemucs(SeperateAttributes):
             if not self.is_primary_stem_only:
                 def secondary_save(sec_stem_name, source, raw_mixture=None, is_inst_mixture=False):
                     secondary_source = self.secondary_source if not is_inst_mixture else None
-                    self.write_to_console(f'{SAVING_STEM[0]}{sec_stem_name}{SAVING_STEM[1]}') if not self.is_secondary_model else None
+                    self.write_to_console(self.translator.translate("Message.SAVING_STEM",sec_stem_name)) if not self.is_secondary_model else None
                     secondary_stem_path = os.path.join(self.export_path, f'{self.audio_file_base}_({sec_stem_name}).wav')
                     secondary_source_secondary = None
                     
@@ -673,14 +676,14 @@ class SeperateVR(SeperateAttributes):
             self.running_inference_console_write()
                         
             y_spec, v_spec = self.inference_vr(self.loading_mix(), device, self.aggressiveness)
-            self.write_to_console(DONE, base_text='')
+            self.write_to_console(self.translator.translate("Message.DONE"), base_text='')
             
         if self.is_secondary_model_activated:
             if self.secondary_model:
                 self.secondary_source_primary, self.secondary_source_secondary = process_secondary_model(self.secondary_model, self.process_data, main_process_method=self.process_method)
 
         if not self.is_secondary_stem_only:
-            self.write_to_console(f'{SAVING_STEM[0]}{self.primary_stem}{SAVING_STEM[1]}') if not self.is_secondary_model else None
+            self.write_to_console(self.translator.translate("Message.SAVING_STEM",self.primary_stem)) if not self.is_secondary_model else None
             primary_stem_path = os.path.join(self.export_path, f'{self.audio_file_base}_({self.primary_stem}).wav')
             if not isinstance(self.primary_source, np.ndarray):
                 self.primary_source = spec_utils.normalize(self.spec_to_wav(y_spec), self.is_normalization).T
@@ -692,7 +695,7 @@ class SeperateVR(SeperateAttributes):
             self.write_audio(primary_stem_path, self.primary_source, 44100, self.secondary_source_primary)
 
         if not self.is_primary_stem_only:
-            self.write_to_console(f'{SAVING_STEM[0]}{self.secondary_stem}{SAVING_STEM[1]}') if not self.is_secondary_model else None
+            self.write_to_console(self.translator.translate("Message.SAVING_STEM",self.secondary_stem)) if not self.is_secondary_model else None
             secondary_stem_path = os.path.join(self.export_path, f'{self.audio_file_base}_({self.secondary_stem}).wav')
             if not isinstance(self.secondary_source, np.ndarray):
                 self.secondary_source = self.spec_to_wav(v_spec)
